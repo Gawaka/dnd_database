@@ -1,0 +1,15 @@
+
+.empty-state {
+    text-align: center;
+
+    &__title {
+        font-size: 1.1rem;
+        margin: 20px 0 20px;
+    }
+
+    &__image {
+        height: 100px;
+        width: 100px;
+        
+    }
+}

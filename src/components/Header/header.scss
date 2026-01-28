@@ -1,0 +1,38 @@
+@use '../../style/variables';
+
+.header {
+    height: 150px;
+    margin-bottom: 30px;
+    background-image: url('../../assets/img/backgrounds/header-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    background-position-x: 100px;
+    background-position-y: bottom;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__logo {
+        width: 100px;
+        height: 100px;
+        filter: 
+            drop-shadow(0 8px 8px rgba(0, 0, 0, 0.8)) 
+            drop-shadow(0 0 30px rgba(234, 234, 234, 0.3)); 
+            
+        // Анімація (опціонально): пульсація при наведенні
+    }
+
+    &__title {
+        font-family: 'Cinzel', serif;
+        font-size: 3.5rem;
+        color: variables.$text-main;
+        text-shadow: 
+            0 5px 8px rgba(0, 0, 0, 0.9), 
+            0 0 20px rgba(255, 255, 255, 0.2);
+    }
+}

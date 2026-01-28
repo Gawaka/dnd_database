@@ -1,0 +1,51 @@
+@use '../../style/variables';
+
+.wrapper {
+    background: none;
+    height: 1016px;
+    width: auto;
+}
+
+.skeleton {
+    background-image: url('../../assets/img/backgrounds/bg-card.png');
+    padding: 30px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    color: variables.$text-main;
+    height: auto;
+    padding: 24px 16px;
+    border: 1px solid variables.$border-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px variables.$shadow-color;
+
+    &__inner-shadow {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$bg-dark-color;
+        box-shadow: inset 0 0 40px #000000;
+    }
+
+    &__slot-silhouette {
+        color: variables.$dark-color;
+        opacity: 0.6;
+        filter: drop-shadow(0 2px 3px rgba(255, 255, 255, 0.549));
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    &__label {
+        margin-top: 15px;
+        font-family: 'Cinzel', serif;
+        font-size: 0.9rem;
+        color: variables.$text-gold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}

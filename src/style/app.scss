@@ -1,0 +1,37 @@
+@use '../style/variables';
+
+.app {
+    max-width: 100%; // Можеш поставити 1440px або 960px
+    width: 100%; 
+    margin: 0 auto; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(169, 169, 169, 0.228);
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}
+
+.character-grid {
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 3 в ряд
+    gap: 20px;
+}
+
+.details-panel {
+    // width: auto;
+    height: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
