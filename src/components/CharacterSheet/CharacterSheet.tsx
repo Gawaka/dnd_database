@@ -4,14 +4,18 @@ import { getModifier, skillToStatMap } from '../../utils/utils';
 import { CharacterSection } from '../CharacterSection/CharacterSection';
 import { EmptyState } from '../EmptyState/EmptyState';
 import './CharacterSheet.scss';
+import { statsDescription } from '../../data/stats';
+import { StatDescription } from '../StatsDescription/StatDescription';
 
 interface CharacterSheetProps {
     character: Character;
+    onMouseEnter: (item: string)=> void;
+    onMouseLeave: ()=> void;
 };
 
-export function CharacterSheet({character}: CharacterSheetProps) {
+export function CharacterSheet({character, onMouseEnter, onMouseLeave}: CharacterSheetProps) {
 
-    const [activeItem, setActiveItem] = useState<{section: 'skills'|'features'|'spells', value: string} | null>(null);
+    const [activeItem, setActiveItem] = useState<{section: 'skills'|'features'|'spells'|'stats',  value: string} | null>(null);
     const [isOpen, setIsOpen] = useState({
         skills: true,
         features: true,
@@ -19,12 +23,12 @@ export function CharacterSheet({character}: CharacterSheetProps) {
     });
 
     const statConfigs = [
-        { label: 'strength', icon: '⚔' },
-        { label: 'dexterity', icon: '➳' },
-        { label: 'constitution', icon: '✚' },
-        { label: 'intelligence', icon: '🕮' },
-        { label: 'wisdom', icon: '👁' },
-        { label: 'charisma', icon: '🗲' },
+        { label: 'strength', icon: '⚔', id: 'str'},
+        { label: 'dexterity', icon: '➳', id: 'dex'},
+        { label: 'constitution', icon: '✚', id: 'con'},
+        { label: 'intelligence', icon: '🕮', id: 'int'},
+        { label: 'wisdom', icon: '👁', id: 'wis'},
+        { label: 'charisma', icon: '🗲', id: 'cha'},
     ];
 
     const toggleState = (section: 'skills' | 'features' | 'spells')=> {
@@ -56,11 +60,21 @@ export function CharacterSheet({character}: CharacterSheetProps) {
                             const totalValue = baseValue + racialBonus;
                             const mod = getModifier(totalValue);
                             const sign = mod > 0 ? '+' : '';
+                            const currentStat = statsDescription.find(item=> item.id === stat.id);
 
                             return(
-                                <li className="details__stats-item" key={stat.label}>
+                                <li 
+                                    className="details__stats-item" 
+                                    key={stat.label}
+                                    onMouseEnter={()=> setActiveItem({section: 'stats', value: stat.id})}
+                                    onMouseLeave={()=> setActiveItem(null)}
+                                >
                                     <span>{stat.icon}</span> {stat.label}: <strong>{baseValue}{`${racialBonus ? ' + ' + racialBonus + ' racial' : ''}`}</strong>
                                     <span> ({sign}{mod})</span>
+                                    <StatDescription 
+                                        stat={currentStat}
+                                        activeItem={activeItem?.section === 'stats' ? activeItem.value : null}
+                                    />
                                 </li>
                             )
                     })}

@@ -1,4 +1,3 @@
-import './characterSection.scss'
 
 interface CharacterSectionProps{
     state: boolean;
@@ -6,7 +5,7 @@ interface CharacterSectionProps{
     onClick: ()=> void;
     className: string;
     classNameItem: string;
-    activeItem: { section: 'skills' | 'features' | 'spells'; value: string } | null;
+    activeItem: { section: 'skills'|'features'|'spells'|'stats'; value: string } | null;
     text: string;
     section: 'skills'|'features'|'spells';
     onMouseEnter: (item: string)=> void;

@@ -1,4 +1,4 @@
-    import type { Spell } from '../types/spell';
+import type { Spell } from '../types/spell';
 
 export const spells: Spell[] = [
     // --- Cantrips (0 Level) ---

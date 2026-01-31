@@ -99,6 +99,9 @@
     }
 
     &__stats-item {
+        position: relative;
+        cursor: help;
+        
         span {
             color: variables.$color-gold-light;
         }

@@ -1,7 +1,6 @@
 @use '../../style/variables';
 
 .header {
-
     height: 150px;
     margin-bottom: 30px;
     background-image: url('../../assets/img/backgrounds/header-bg.png');
@@ -21,7 +20,7 @@
     &__title-wrapper {
         width: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 20px;
     }
@@ -55,5 +54,10 @@
             flex-direction: row;
             gap: 20px;
         }
+    }
+
+    &__navigate-items {
+        color: variables.$text-main;
+        font-size: 1.1rem;
     }
 }

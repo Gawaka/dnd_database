@@ -12,7 +12,7 @@ export function Header() {
         <div className="header__navigate-wrapper">
             <nav className='header__navigate'>
                 <ul className="header__navigate-items">
-                    <li className="header__navigate-item">Home</li>
+                    <li className="header__navigate-item">Characters</li>
                     <li className="header__navigate-item">Equipment</li>
                     <li className="header__navigate-item">Scenarios</li>
                     <li className="header__navigate-item">About</li>
