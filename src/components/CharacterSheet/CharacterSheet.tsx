@@ -5,7 +5,8 @@ import { CharacterSection } from '../CharacterSection/CharacterSection';
 import { EmptyState } from '../EmptyState/EmptyState';
 import './CharacterSheet.scss';
 import { statsDescription } from '../../data/stats';
-import { StatDescription } from '../StatsDescription/StatDescription';
+import { StatsDescription } from '../StatsDescription/StatsDescription';
+import { features as allFeaturesData } from '../../data/features';
 
 interface CharacterSheetProps {
     character: Character;
@@ -37,6 +38,8 @@ export function CharacterSheet({character, onMouseEnter, onMouseLeave}: Characte
             [section]: !prev[section]
         }));
     };
+    
+    const currentFeature = allFeaturesData.find(item=> item.id.toLowerCase() === activeItem?.value.toLowerCase() || item.originalName.toLowerCase() === activeItem?.value.toLowerCase());
 
     const formatedSkills = character.skills.map((skill)=> {
         const currentSkill = skill;
@@ -71,9 +74,9 @@ export function CharacterSheet({character, onMouseEnter, onMouseLeave}: Characte
                                 >
                                     <span>{stat.icon}</span> {stat.label}: <strong>{baseValue}{`${racialBonus ? ' + ' + racialBonus + ' racial' : ''}`}</strong>
                                     <span> ({sign}{mod})</span>
-                                    <StatDescription 
-                                        stat={currentStat}
-                                        activeItem={activeItem?.section === 'stats' ? activeItem.value : null}
+                                    <StatsDescription 
+                                        data={activeItem?.value === stat.id ? currentStat : undefined}
+                                        activeItem={activeItem?.value || null}
                                     />
                                 </li>
                             )
@@ -89,6 +92,7 @@ export function CharacterSheet({character, onMouseEnter, onMouseLeave}: Characte
                     onClick={()=> toggleState('skills')} 
                     state={isOpen.skills} 
                     arr={formatedSkills}
+                    fullData={formatedSkills}
                     section='skills'
                     activeItem={activeItem}
                     onMouseEnter={(item)=> setActiveItem({section: 'skills', value: item})}
@@ -101,9 +105,13 @@ export function CharacterSheet({character, onMouseEnter, onMouseLeave}: Characte
                     onClick={()=> toggleState('features')} 
                     state={isOpen.features} 
                     arr={character.features}
+                    fullData={currentFeature}
                     section='features'
                     activeItem={activeItem}
-                    onMouseEnter={(item)=> setActiveItem({section: 'features', value: item})}
+                    onMouseEnter={(item: any) => setActiveItem({
+                    section: 'features', 
+                    value: typeof item === 'string' ? item : item.originalName 
+                })}
                     onMouseLeave={()=> setActiveItem(null)}
                 />
                 <section className="character-sheet__spells-wrapper">
@@ -116,6 +124,7 @@ export function CharacterSheet({character, onMouseEnter, onMouseLeave}: Characte
                             onClick={()=> toggleState('spells')} 
                             state={isOpen.spells} 
                             arr={character.spells}
+                            fullData={character.spells}
                             section='spells'
                             activeItem={activeItem}
                             onMouseEnter={(item)=> setActiveItem({section: 'spells', value: item})}

@@ -66,22 +66,23 @@
     &__features-item,
     &__spells-item {
         padding: 5px;
-        cursor: pointer;
+        cursor: help;
         color: variables.$text-main;
+        position: relative;
     }
 
     &__spells {
         width: 100%;
     }
 
-    &__skills-item--active-item,
-    &__features-item--active-item,
-    &__spells-item--active-item {
-        color: variables.$color-gold-light;
-        border-radius: 10px;
-        transform: scale(1.1); // Легкий підйом
-        transition: transform 0.3s ease-in;
-    }
+    // &__skills-item--active-item,
+    // &__features-item--active-item,
+    // &__spells-item--active-item {
+    //     color: variables.$color-gold-light;
+    //     border-radius: 10px;
+    //     transform: scale(1.1); // Легкий підйом
+    //     transition: transform 0.3s ease-in;
+    // }
 
     .unscroll::after {
         content: ' ▴';
