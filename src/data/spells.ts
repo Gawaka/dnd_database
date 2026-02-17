@@ -122,6 +122,18 @@ export const spells: Spell[] = [
         duration: 'Миттєво',
         description: 'Ви кидаєте бульбашку кислоти. Вона може вразити одну або дві істоти, що стоять поруч. Урон 1d6 кислотою.'
     },
+    {
+    id: 'thaumaturgy',
+    name: 'Тауматургія',
+    originalName: 'Thaumaturgy',
+    level: 0,
+    school: 'Transmutation',
+    castingTime: '1 дія',
+    range: '30 футів',
+    components: 'V',
+    duration: 'До 1 хвилини',
+    description: 'Ви проявляєте незначне диво. Ви можете: посилити голос утричі, змусити полум’я мерехтіти/змінити колір, викликати нешкідливе тремтіння землі або створити звук (грім, крик).'
+    },
 
     // --- 1st Level Spells ---
     {

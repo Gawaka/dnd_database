@@ -20,7 +20,8 @@ const hero01: Character = {
     goal: 'Знайти спокійну гавань або гідну справу, заради якої варто померти.',
     worldview: 'Законно-нейтральний.',
     skills: ['Athletics', 'Perception', 'Survival', 'Intimidation'],
-    features: ['Darkvision', 'Fey Ancestry', 'Fighting Style (Great Weapon)', 'Second Wind']
+    features: ['Darkvision', 'Fey Ancestry', 'Fighting Style (Great Weapon)', 'Second Wind'],
+    inventory: ['Дворучний меч', 'Кольчуга', 'Рюкзак', 'rations', 'tinderbox'],
 };
 
 const hero02: Character = {
@@ -44,7 +45,8 @@ const hero02: Character = {
     worldview: 'Нейтральний.',
     skills: ['Arcana', 'History', 'Investigation'],
     features: ['Arcane Recovery', 'Spellcasting'],
-    spells: ['Fire Bolt', 'Mage Hand', 'Ray of Frost', 'Magic Missile', 'Shield', 'Sleep']
+    spells: ['Fire Bolt', 'Mage Hand', 'Ray of Frost', 'Magic Missile', 'Shield', 'Sleep'],
+    inventory: ['quarterstaff', 'spellbook', 'component-pouch', 'ink-pen', 'scroll-of-identify']
 };
 
 const hero03: Character = {
@@ -67,7 +69,8 @@ const hero03: Character = {
     goal: 'Накопичити достатньо золота, щоб купити собі свободу від минулого.',
     worldview: 'Хаотично-нейтральний.',
     skills: ['Stealth', 'Sleight of Hand', 'Acrobatics', 'Deception', 'Perception'],
-    features: ['Darkvision', 'Sneak Attack', 'Thieves\' Cant', 'Expertise (Stealth)']
+    features: ['Darkvision', 'Sneak Attack', 'Thieves\' Cant', 'Expertise (Stealth)'],
+    inventory: ['dagger', 'leather-armor', 'thieves-tools', 'crowbar', 'lucky-coin']
 };
 
 const hero04: Character = {
@@ -90,7 +93,8 @@ const hero04: Character = {
     goal: 'Викорінити несправедливість і стати прикладом честі для інших.',
     worldview: 'Законно-добрий.',
     skills: ['Athletics', 'Religion', 'Persuasion'],
-    features: ['Darkvision', 'Dwarven Resilience', 'Divine Sense', 'Lay on Hands']
+    features: ['Darkvision', 'Dwarven Resilience', 'Divine Sense', 'Lay on Hands'],
+    inventory: ['warhammer', 'shield', 'plate-armor', 'holy-symbol', 'prayer-book']
 };
 
 const hero05: Character = {
@@ -113,7 +117,8 @@ const hero05: Character = {
     goal: 'Перемогти легендарного звіра, щоб довести свою силу колишньому клану.',
     worldview: 'Хаотично-нейтральний.',
     skills: ['Athletics', 'Intimidation', 'Survival'],
-    features: ['Darkvision', 'Relentless Endurance', 'Savage Attacks', 'Rage', 'Unarmored Defense']
+    features: ['Darkvision', 'Relentless Endurance', 'Savage Attacks', 'Rage', 'Unarmored Defense'],
+    inventory: ['greataxe', 'handaxe', 'explorers-pack', 'trophy-necklace']
 };
 
 const hero06: Character = {
@@ -137,7 +142,8 @@ const hero06: Character = {
     worldview: 'Хаотично-добрий.',
     skills: ['Performance', 'Persuasion', 'Deception', 'Insight'],
     features: ['Darkvision', 'Hellish Resistance', 'Bardic Inspiration', 'Spellcasting'],
-    spells: ['Vicious Mockery', 'Minor Illusion', 'Healing Word', 'Thunderwave', 'Charm Person', 'Thaumaturgy']
+    spells: ['Vicious Mockery', 'Minor Illusion', 'Healing Word', 'Thunderwave', 'Charm Person', 'Thaumaturgy'],
+    inventory: ['rapier', 'lute', 'diplomats-pack', 'disguise-kit']
 };
 
 const hero07: Character = {
@@ -161,7 +167,8 @@ const hero07: Character = {
     worldview: 'Істинно-добрий.',
     skills: ['Medicine', 'History', 'Insight'],
     features: ['Darkvision', 'Stonecunning', 'Spellcasting', 'Divine Domain (Life)'],
-    spells: ['Sacred Flame', 'Guidance', 'Bless', 'Cure Wounds', 'Guiding Bolt']
+    spells: ['Sacred Flame', 'Guidance', 'Bless', 'Cure Wounds', 'Guiding Bolt'],
+    inventory: ['mace', 'scale-mail', 'holy-symbol', 'healers-kit', 'smith-tools']
 };
 
 const hero08: Character = {
@@ -185,7 +192,8 @@ const hero08: Character = {
     worldview: 'Нейтральний.',
     skills: ['Nature', 'Survival', 'Animal Handling', 'Perception'],
     features: ['Darkvision', 'Fey Ancestry', 'Mask of the Wild', 'Druidic', 'Spellcasting'],
-    spells: ['Druidcraft', 'Shillelagh', 'Entangle', 'Goodberry', 'Speak with Animals']
+    spells: ['Druidcraft', 'Shillelagh', 'Entangle', 'Goodberry', 'Speak with Animals'],
+    inventory: ['quarterstaff', 'leather-armor', 'totem', 'herbalism-kit']
 };
 
 const hero09: Character = {
@@ -208,7 +216,8 @@ const hero09: Character = {
     goal: 'Знайти втрачені сувої свого майстра.',
     worldview: 'Законно-нейтральний.',
     skills: ['Acrobatics', 'Insight', 'Athletics'],
-    features: ['Unarmored Defense', 'Martial Arts']
+    features: ['Unarmored Defense', 'Martial Arts'],
+    inventory: ['darts', 'monks-robe', 'holy-symbol', 'ancient-scroll']
 };
 
 const hero10: Character = {
@@ -231,7 +240,8 @@ const hero10: Character = {
     goal: 'Захистити кордони свого поселення від вторгнення гоблінів.',
     worldview: 'Хаотично-добрий.',
     skills: ['Survival', 'Stealth', 'Nature', 'Perception', 'Animal Handling'],
-    features: ['Lucky', 'Brave', 'Favored Enemy (Goblins)', 'Natural Explorer']
+    features: ['Lucky', 'Brave', 'Favored Enemy (Goblins)', 'Natural Explorer'],
+    inventory: ['longbow', 'shortsword', 'quiver', 'rope-silk', 'goblin-ear-necklace']
 };
 
 const hero11: Character = {
@@ -255,7 +265,8 @@ const hero11: Character = {
     worldview: 'Хаотично-нейтральнний.',
     skills: ['Intimidation', 'Arcana'],
     features: ['Breath Weapon (Fire)', 'Damage Resistance (Fire)', 'Spellcasting', 'Wild Magic Surge'],
-    spells: ['Fire Bolt', 'Light', 'Mage Hand', 'Chaos Bolt', 'Burning Hands']
+    spells: ['Fire Bolt', 'Light', 'Mage Hand', 'Chaos Bolt', 'Burning Hands'],
+    inventory: ['dagger', 'arcane-focus', 'explorers-pack', 'burnt-amulet']
 };
 
 const hero12: Character = {
@@ -279,7 +290,8 @@ const hero12: Character = {
     worldview: 'Нейтральний.',
     skills: ['Deception', 'Arcana', 'History', 'intimidation'],
     features: ['Otherworldly Patron (Fiend)', 'Pact Magic'],
-    spells: ['Eldritch Blast', 'Prestidigitation', 'Hex', 'Hellish Rebuke']
+    spells: ['Eldritch Blast', 'Prestidigitation', 'Hex', 'Hellish Rebuke'],
+    inventory: ['dagger', 'arcane-focus', 'scholars-pack', 'pact-contract']
 };
 
 const hero13: Character = {
@@ -305,7 +317,7 @@ const hero13: Character = {
         'Arcana', 
         'Investigation', 
         'Sleight of Hand'
-        ],
+    ],
     features: [
         'Darkvision', 
         'Gnome Cunning', 
@@ -320,7 +332,8 @@ const hero13: Character = {
         'Cure Wounds', 
         'Grease', 
         'Detect Magic'
-    ]
+    ],
+    inventory: ['light-crossbow', 'tinkers-tools', 'magnifying-glass', 'clockwork-toy']
 };
 
 const hero14: Character = {
@@ -351,7 +364,8 @@ const hero14: Character = {
     ],
     spells: [
         'Mage Hand (Psionic)'
-    ]
+    ],
+    inventory: ['greatsword', 'githyanki-armor', 'astral-compass']
 };
 
 const hero15: Character = {
@@ -368,6 +382,7 @@ const hero15: Character = {
     worldview: 'Законослухняно-злий',
     skills: ['Intimidation', 'Athletics', 'Persuasion'],
     features: ['Divine Sense', 'Lay on Hands', 'Fighting Style (Dueling)'],
+    inventory: ['longsword', 'shield', 'broken-holy-symbol', 'skull-trinket']
 };
 
 const hero16: Character = {
@@ -384,7 +399,8 @@ const hero16: Character = {
     worldview: 'Хаотично-нейтральний',
     skills: ['Arcana', 'Sleight of Hand', 'Deception'],
     features: ['Gnome Cunning', 'Arcane Recovery', 'Spellcasting'],
-    spells: ['Minor Illusion', 'Prestidigitation', 'Silent Image', 'Color Spray', 'Disguise Self', 'Grease']
+    spells: ['Minor Illusion', 'Prestidigitation', 'Silent Image', 'Color Spray', 'Disguise Self', 'Grease'],
+    inventory: ['quarterstaff', 'deck-of-cards', 'colorful-robes', 'wand-of-smiles']
 };
 
 const hero17: Character = {
@@ -401,7 +417,8 @@ const hero17: Character = {
     worldview: 'Нейтральний',
     skills: ['Stealth', 'Insight', 'Investigation', 'Persuasion'],
     features: ['Darkvision', 'Hellish Resistance', 'Sneak Attack', 'Expertise (Deception)'],
-    spells: ['Thaumaturgy']
+    spells: ['Thaumaturgy'],
+    inventory: ['shortsword', 'hand-crossbow', 'poisoners-kit', 'spies-pouch']
 };
 
 const hero18: Character = {
@@ -417,7 +434,8 @@ const hero18: Character = {
     goal: 'Знайти смерть у славній битві проти дракона.',
     worldview: 'Хаотично-добрий',
     skills: ['Athletics', 'Survival', 'Intimidation'],
-    features: ['Darkvision', 'Dwarven Resilience', 'Rage', 'Unarmored Defense']
+    features: ['Darkvision', 'Dwarven Resilience', 'Rage', 'Unarmored Defense'],
+    inventory: ['greataxe', 'broken-anvil-piece', 'drinking-horn']
 };
 
 const hero19: Character = {
@@ -434,7 +452,8 @@ const hero19: Character = {
     worldview: 'Хаотично-нейтральний',
     skills: ['Nature', 'Deception', 'Persuasion'],
     features: ['Fey Ancestry', 'Otherworldly Patron (Archfey)', 'Pact Magic'],
-    spells: ['Eldritch Blast', 'Minor Illusion', 'Faerie Fire', 'Sleep']
+    spells: ['Eldritch Blast', 'Minor Illusion', 'Faerie Fire', 'Sleep'],
+    inventory: ['quarterstaff', 'fey-lantern', 'satchel-of-glitter']
 };
 
 const hero20: Character = {
@@ -450,7 +469,8 @@ const hero20: Character = {
     goal: 'Вполювати вервольфа, який тероризує передмістя.',
     worldview: 'Законослухняно-нейтральний',
     skills: ['Survival', 'Perception', 'Athletics'],
-    features: ['Darkvision', 'Relentless Endurance', 'Favored Enemy (Monstrosities)', 'Natural Explorer (Urban)']
+    features: ['Darkvision', 'Relentless Endurance', 'Favored Enemy (Monstrosities)', 'Natural Explorer (Urban)'],
+    inventory: ['battleaxe', 'hand-crossbow', 'hunters-trap', 'monster-pouch']
 };
 
 const hero21: Character = {
@@ -467,7 +487,8 @@ const hero21: Character = {
     worldview: 'Нейтрально-злий',
     skills: ['Medicine', 'Nature', 'Survival'],
     features: ['Druidic', 'Spellcasting'],
-    spells: ['Chill Touch', 'Poison Spray', 'Inflict Wounds', 'Detect Poison and Disease']
+    spells: ['Chill Touch', 'Poison Spray', 'Inflict Wounds', 'Detect Poison and Disease'],
+    inventory: ['quarterstaff', 'wooden-shield', 'pouch-of-spores']
 };
 
 const hero22: Character = {
@@ -484,7 +505,8 @@ const hero22: Character = {
     worldview: 'Хаотично-добрий',
     skills: ['Acrobatics', 'Performance', 'Persuasion', 'Sleight of Hand'],
     features: ['Lucky', 'Brave', 'Bardic Inspiration', 'Spellcasting'],
-    spells: ['Vicious Mockery', 'Dancing Lights', 'Charm Person', 'Feather Fall', 'Heroism']
+    spells: ['Vicious Mockery', 'Dancing Lights', 'Charm Person', 'Feather Fall', 'Heroism'],
+    inventory: ['rapier', 'tambourine', 'juggling-balls', 'costume']
 };
 
 const hero23: Character = {
@@ -501,7 +523,8 @@ const hero23: Character = {
     worldview: 'Законослухняно-нейтральний',
     skills: ['Religion', 'History', 'Insight'],
     features: ['Darkvision', 'Fey Ancestry', 'Spellcasting', 'Warding Flare'],
-    spells: ['Light', 'Sacred Flame', 'Burning Hands', 'Faerie Fire', 'Guiding Bolt']
+    spells: ['Light', 'Sacred Flame', 'Burning Hands', 'Faerie Fire', 'Guiding Bolt'],
+    inventory: ['mace', 'scale-mail', 'holy-symbol', 'censer-of-purification']
 };
 
 const hero24: Character = {
@@ -517,7 +540,8 @@ const hero24: Character = {
     goal: 'Повернути фамільну зброю, викрадену бандитами.',
     worldview: 'Законослухняно-добрий',
     skills: ['Athletics', 'History', 'Intimidation'],
-    features: ['Breath Weapon (Cold)', 'Damage Resistance (Cold)', 'Fighting Style (Defense)', 'Second Wind']
+    features: ['Breath Weapon (Cold)', 'Damage Resistance (Cold)', 'Fighting Style (Defense)', 'Second Wind'],
+    inventory: ['halberd', 'heavy-armor', 'silver-dragon-scale']
 };
 
 const hero25: Character = {
@@ -534,7 +558,8 @@ const hero25: Character = {
     worldview: 'Хаотично-нейтральний',
     skills: ['Arcana', 'Intimidation'],
     features: ['Darkvision', 'Fire Resistance', 'Draconic Resilience', 'Spellcasting'],
-    spells: ['Fire Bolt', 'Control Flames', 'Burning Hands', 'Shield', 'Produce Flame']
+    spells: ['Fire Bolt', 'Control Flames', 'Burning Hands', 'Shield', 'Produce Flame'],
+    inventory: ['dagger', 'fire-opal-focus', 'burnt-journal']
 };
 
 const hero26: Character = {
@@ -550,7 +575,8 @@ const hero26: Character = {
     goal: 'Виконати контракт на усунення корумпованого чиновника.',
     worldview: 'Законно-зла',
     skills: ['Stealth', 'Acrobatics', 'Insight'],
-    features: ['Darkvision', 'Fey Ancestry', 'Unarmored Defense', 'Martial Arts']
+    features: ['Darkvision', 'Fey Ancestry', 'Unarmored Defense', 'Martial Arts'],
+    inventory: ['shortsword', 'monks-robe', 'vial-of-shadow-ink']
 };
 
 const hero27: Character = {
@@ -580,13 +606,15 @@ const hero27: Character = {
         'Spellcasting'
     ],
     spells: [
-        'Acid Splash',     // Кислота
-        'Poison Spray',    // Отрута
-        'Ray of Sickness', // Промінь хвороби
-        'Cure Wounds',     // Лікування (шприц/зілля)
+        'Acid Splash',
+        'Poison Spray',
+        'Ray of Sickness',
+        'Cure Wounds',
         'Purify Food and Drink'
-    ]
+    ],
+    inventory: ['alchemists-supplies', 'acid-flask', 'vial-of-unknown-liquid']
 };
+
 
 const hero28: Character = {
     id: '28',
@@ -597,31 +625,69 @@ const hero28: Character = {
     level: 1,
     stats: {
         strength: 8,
-        dexterity: 16, // Дроу спритні
+        dexterity: 16,
         constitution: 14,
         intelligence: 10,
         wisdom: 10,
-        charisma: 16 // Головний стат для чародія
+        charisma: 16
     },
     bio: 'Він народився під час затемнення в Мензоберранзані. Його магія — це не вогонь чи блискавки, а сама темрява, що оживає. Він втік на поверхню, бо відчував, що Тіні кличуть його не служити павучій королеві Ллос, а знайти власний шлях. Світло сонця завдає йому болю, але темрява в серцях людей лякає його ще більше.',
     nature: 'Меланхолійний, тихий та лякаюче спокійний.',
     goal: 'Зрозуміти природу своєї темної сили та не дати їй поглинути себе.',
-    worldview: 'Хаотично-добрий', // Рідкість для Дроу (ренегат)
+    worldview: 'Хаотично-добрий',
     skills: ['Stealth', 'Deception', 'Persuasion', 'Perception'],
     features: [
-        'Superior Darkvision', // Бачить у темряві краще за інших
-        'Sunlight Sensitivity', // Слабкість на сонці
+        'Superior Darkvision',
+        'Sunlight Sensitivity',
         'Drow Magic', 
-        'Eyes of the Dark', // Класова фіча тіньового чародія
-        'Strength of the Grave' // Шанс не померти при 0 HP
+        'Eyes of the Dark',
+        'Strength of the Grave'
     ],
     spells: [
-        'Chill Touch', // Некротична рука
+        'Chill Touch',
         'Minor Illusion',
-        'Dancing Lights', // Расовий спел
-        'False Life', // Тимчасове життя
+        'Dancing Lights',
+        'False Life',
         'Sleep'
-    ]
+    ],
+    inventory: ['dagger', 'shadow-shard', 'drow-cloak']
+};
+
+const hero29: Character = {
+    id: '29',
+    name: 'Q\'al',
+    image: '../src/assets/img/avatars/hero29.png',
+    race: { id: 'aarakocra', name: 'Aarakocra', bonuses: {wisdom: 2}},
+    class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '../src/assets/img/class-icons/cleric.svg' },
+    level: 1,
+    stats: {
+        strength: 14,
+        dexterity: 16,
+        constitution: 12,
+        intelligence: 10,
+        wisdom: 16,
+        charisma: 8
+    },
+    bio: 'Він спустився з найвищих піків, де шторми ніколи не вщухають. К\'аль вірить, що блискавка — це єдина чиста форма правосуддя. Він говорить рідко, різкими клекочучими звуками, і завжди спостерігає за горизонтом. Його пір\'я пахне озоном і дощем.',
+    nature: 'Відсторонений, рішучий та непередбачуваний, як гроза.',
+    goal: 'Полювати на елементалів землі, які оскверняють небо.',
+    worldview: 'Хаотично-нейтральний',
+    skills: ['Perception', 'Acrobatics', 'Nature'],
+    features: [
+        'Flight',
+        'Talons',
+        'Spellcasting',
+        'Wrath of the storm'
+    ],
+    spells: [
+        'Thaumaturgy',
+        'Guidance',
+        'Thunderwave',
+        'Fog cloud',
+        'Guiding bolt',
+        'Healing word'
+    ],
+    inventory: ['spear', 'holy-symbol-storm', 'storm-glass', 'feather-pouch', 'lightning-stone']
 };
 
 export const characters: Character[] = [
@@ -652,5 +718,6 @@ export const characters: Character[] = [
     hero25,
     hero26,
     hero27,
-    hero28
+    hero28,
+    hero29
 ];

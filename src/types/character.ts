@@ -17,4 +17,5 @@ export interface Character {
     skills: any[];
     features: any[];
     spells?: any[];
+    inventory: string[];
 }

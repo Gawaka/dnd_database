@@ -4,7 +4,7 @@
         width: 300px;
         height: 54px;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
         padding: 12px 32px;
         background-image: url('../../assets/img/backgrounds/button-stone.png');
         background-size: cover;
@@ -38,20 +38,20 @@
             }
     }
 
-    // --- Варіант: Другорядна кнопка (Сіра/Залізна) ---
-    // Використання: <Button className="rpg-button secondary" ... />
-    //     .rpg-button.secondary {
-    //     border-color: variables.$color-iron-dark;
-    //     color: variables.$color-iron-light;
-    //     background: linear-gradient(180deg, #3a3f44 0%, #242629 100%);
+.button-secondary {
+    height: 30px;
+    width: 60px;
+    border-color: variables.$color-iron-dark;
+    color: variables.$color-iron-light;
+    background: linear-gradient(180deg, #3a3f44 0%, #242629 100%);
 
-    //     &:hover {
-    //         color: #fff;
-    //         border-color: variables.$color-iron-light;
-    //         box-shadow: 0 0 15px rgba(138, 143, 150, 0.2);
-    //     }
-        
-    //     &:active {
-    //         background: linear-gradient(180deg, #1a1b1d 0%, #2c2e33 100%);
-    //     }
-    // }
+    &:hover {
+        color: #fff;
+        border-color: variables.$color-iron-light;
+        box-shadow: 0 0 15px rgba(138, 143, 150, 0.2);
+    }
+    
+    &:active {
+        background: linear-gradient(180deg, #1a1b1d 0%, #2c2e33 100%);
+    }
+}

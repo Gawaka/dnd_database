@@ -126,5 +126,5 @@ export const skills: Skill[] = [
         originalName: 'Persuasion',
         ability: 'charisma',
         description: 'Здатність впливати на рішення інших чесною розмовою, дипломатією, ввічливістю або розумними аргументами.'
-    }
+    },
 ];

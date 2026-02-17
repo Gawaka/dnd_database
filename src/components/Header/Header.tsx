@@ -2,7 +2,7 @@ import './header.scss';
 import logo from '../../assets/img/logo.svg';
 
 export function Header() {
-
+    
     return(
     <header className='header'>
         <div className="header__title-wrapper">
@@ -21,4 +21,4 @@ export function Header() {
         </div>
     </header>
     )
-}
+};

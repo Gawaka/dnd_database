@@ -24,5 +24,9 @@ export interface Spell extends BaseEntity {
     duration: string;
 }
 
+export interface Inventory extends BaseEntity {
+    type: string
+}
+
 // Універсальний тип для нашого компонента
-export type EntityInfoData = Feature | Skill | Spell;
+export type EntityInfoData = Feature | Skill | Spell | Inventory;
