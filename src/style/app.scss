@@ -16,6 +16,17 @@
     }
 }
 
+a {
+    color: variables.$text-main;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1);
+    color: variables.$text-gold;
+}
+
 .character-grid {
     width: 70%;
     height: 100%;

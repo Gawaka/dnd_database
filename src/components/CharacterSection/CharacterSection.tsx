@@ -27,7 +27,7 @@ export function CharacterSection({state, arr, onClick, className, classNameItem,
                 </h3>
                     <ul className={`${className}-items`}>
                         {arr.map((item, i) => {
-                            console.log(item);
+                            // console.log(item);
                             return (
                                 state ? (
                                     <li

@@ -11,6 +11,7 @@ export function CharactersPage() {
         const [activeCharacterId, setActiveCharacterId] = useState<string | null>(()=> {
             const randomIndex = getRandomChar({max: characters.length});
             return characters[randomIndex].id;
+            
         });
         const activeCharacter = characters.find(char=> char.id === activeCharacterId);
 

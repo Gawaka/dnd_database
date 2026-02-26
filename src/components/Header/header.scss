@@ -1,5 +1,7 @@
 @use '../../style/variables';
 
+
+
 .header {
     font-family: "Cinzel", serif;
     font-weight: 400;
@@ -60,17 +62,17 @@
     }
 
     &__navigate-items {
-        color: variables.$text-main;
         font-size: 1.1rem;
         cursor: pointer;
     }
 
-    &__navigate-item {
+    &__navigate-item { // у файлі апп стилі для посилань (а)
+        color: variables.$text-main;
         font-size: 1.4rem;
         text-transform: uppercase;
     }
 
-    &__navigate-item:hover {
+    &__navigate-item:hover { // у файлі апп на посиланнях стоїть такий самий ховер
         transition: ease-in-out 0.2s;
         transform: scale(1.1);
         color: variables.$text-gold;

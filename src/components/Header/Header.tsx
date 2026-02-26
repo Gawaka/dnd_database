@@ -1,5 +1,6 @@
-import './header.scss';
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/img/logo.svg';
+import './header.scss';
 
 export function Header() {
     
@@ -12,10 +13,18 @@ export function Header() {
         <div className="header__navigate-wrapper">
             <nav className='header__navigate'>
                 <ul className="header__navigate-items">
-                    <li className="header__navigate-item">Characters</li>
-                    <li className="header__navigate-item">Equipment</li>
-                    <li className="header__navigate-item">Scenarios</li>
-                    <li className="header__navigate-item">About</li>
+                    <li>
+                        <NavLink className="header__navigate-item" to='/'>Characters</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-item" to='/equipment'>Equipment</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-item" to='/racesPage'>Races</NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
