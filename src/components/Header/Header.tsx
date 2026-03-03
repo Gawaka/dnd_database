@@ -17,13 +17,13 @@ export function Header() {
                         <NavLink className="header__navigate-item" to='/'>Characters</NavLink>
                     </li>
                     <li>
+                        <NavLink className="header__navigate-item" to='/racesPage'>Races</NavLink>
+                    </li>
+                    <li>
                         <NavLink className="header__navigate-item" to='/equipment'>Equipment</NavLink>
                     </li>
                     <li>
                         <NavLink className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="header__navigate-item" to='/racesPage'>Races</NavLink>
                     </li>
                 </ul>
             </nav>

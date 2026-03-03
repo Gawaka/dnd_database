@@ -1,0 +1,75 @@
+@use '../../style/variables';
+
+.races-card {
+    width: 90%;
+    height: 100%;
+    padding: 24px 16px;
+    margin: 0 auto;
+
+    &__title {
+    margin: 0 0 12px 0;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: variables.$text-gold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    &__wrapper {
+        padding: 30px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__item {
+        background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border: 1px solid variables.$border-color;
+        box-shadow: 0 4px 10px variables.$shadow-color;
+        border-radius: 8px;
+        gap: 10px;
+
+        img {
+            width: 500px;
+            height: 500px;
+            border: 3px solid #000;
+            box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.6);
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        h4 {
+            text-align: center;
+            color: variables.$text-gold;
+            font-size: 1.5rem;
+            font-family: "Cinzel", serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+
+    &__info-wrapper {
+        padding: 0 20px;
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        strong {
+            color: variables.$text-gold;
+            font-size: 1.4rem;
+        }
+    }
+}

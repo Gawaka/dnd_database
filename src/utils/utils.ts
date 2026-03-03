@@ -1,7 +1,23 @@
+// import img from ''
 
 interface UtilsProps {
     max: number,
 }
+
+export const racesAvatars = [
+    { id: 'dragonborn', img: 'public/races-avatars/dragonborn.jpg' },
+    { id: 'dwarf',      img: 'public/races-avatars/dwarf.jpg' },
+    { id: 'elf',        img: 'public/races-avatars/elf.jpg' },
+    { id: 'gnome',      img: 'public/races-avatars/gnome.jpg' },
+    { id: 'half-elf',   img: 'public/races-avatars/half-elf.jpg' },
+    { id: 'half-orc',   img: 'public/races-avatars/half-orc.jpg' },
+    { id: 'halfling',   img: 'public/races-avatars/halfing.jpg' },
+    { id: 'human',      img: 'public/races-avatars/human.jpg' },
+    { id: 'tiefling',   img: 'public/races-avatars/tiefling.jpg' },
+];
+
+console.log(racesAvatars);
+
 
 export function getModifier(score: number) {
     const numModifier = (score - 10)/2;
