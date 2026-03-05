@@ -40,6 +40,19 @@ const [races, setRaces] = useState<Race[]>([]);
                                     {`${race.size}. ${race.size_description}`}
                                 </p>
                                 <p><strong>Speed:</strong> {race.speed} ft</p>
+                                {race.subraces && race.subraces.length > 0 ? (
+                                    <div className="subraces-list">
+                                    <ul>
+                                        {race.subraces.map((sub: any) => (
+                                        <li key={sub.index}>
+                                            <strong>{sub.name}: </strong> {sub.desc}
+                                        </li>
+                                        ))}
+                                    </ul>
+                                    </div>
+                                ) : (
+                                    <p><i>This race don't have subraces.</i></p>
+                                )}
                             </div>
                         </li>
                     ))}

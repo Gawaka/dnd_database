@@ -1,7 +1,7 @@
 @use '../style/variables';
 
 .app {
-    max-width: 100%; // Можеш поставити 1440px або 960px
+    max-width: 100%;
     width: 100%; 
     margin: 0 auto; 
     min-height: 100vh;
@@ -29,15 +29,6 @@ a:hover {
     transition: ease-in-out 0.2s;
     transform: scale(1.1);
     color: variables.$text-gold;
-}
-
-.character-grid {
-    width: 70%;
-    height: 100%;
-    margin: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
 }
 
 .details-panel {

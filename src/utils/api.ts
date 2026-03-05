@@ -17,19 +17,44 @@ export const fetchRaces = () => {
 const GQL_URL = 'https://www.dnd5eapi.co/graphql';
 
 const query = `
-    query GetRaces {
-    races {
-        index
-        age
-        alignment
-        language_desc
-        name
-        size
-        size_description
-        speed
-        updated_at
-    }
-    }
+    query UltimateRaceQuery {
+        races {
+            index
+            name
+            speed
+            size
+            size_description
+            age
+            alignment
+            ability_bonuses {
+                bonus
+            ability_score {
+                name
+                index
+                }
+            }
+            ability_bonus_options {
+                choose
+            }
+            language_desc
+            languages {
+                name
+                index
+            }
+            language_options {
+                choose
+            }
+            traits {
+            index
+            name
+            }
+            subraces {
+            index
+            name
+            desc
+            }
+        }
+        }
 `;
 
 return axios.post(GQL_URL, { query })

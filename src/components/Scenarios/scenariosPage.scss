@@ -1,0 +1,72 @@
+@use '../../style/variables';
+
+.scenarios-page {
+    width: 90%;
+    height: 100%;
+    padding: 24px 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    strong {
+        color: variables.$text-gold;
+        font-size: 1.4rem;
+    }
+
+    &__title {
+        margin: 0 0 50px 0;
+        font-family: "Cinzel", serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: variables.$text-gold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    &__scenarios-wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    &__scenario {
+        background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
+        border: 1px solid variables.$border-color;
+        box-shadow: 0 4px 10px variables.$shadow-color;
+        border-radius: 8px;
+        // width: 400px;
+        padding: 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__name {
+        text-align: center;
+        color: variables.$text-gold;
+        font-family: "Cinzel", serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__avatar {
+        width: 800px;
+        height: 500px;
+        border: 2px solid #000;
+        box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+    }
+
+    &__info {
+        padding: 0 15px;
+    }
+}

@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/img/logo.svg';
 import './header.scss';
 
@@ -20,10 +20,10 @@ export function Header() {
                         <NavLink className="header__navigate-item" to='/racesPage'>Races</NavLink>
                     </li>
                     <li>
-                        <NavLink className="header__navigate-item" to='/equipment'>Equipment</NavLink>
+                        <NavLink className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
                     </li>
                     <li>
-                        <NavLink className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
+                        <NavLink className="header__navigate-item" to='/equipment'>Equipment</NavLink>
                     </li>
                 </ul>
             </nav>

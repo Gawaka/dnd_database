@@ -1,0 +1,15 @@
+
+.character-grid {
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.character-grid-title {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
