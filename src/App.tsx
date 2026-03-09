@@ -4,7 +4,7 @@ import { CharactersPage } from './components/CharactersPage/CharactersPage';
 import { Equipment } from './components/Equipment/Equipment';
 import { RacesPage } from './components/RacesPage/RacesPage';
 import './style/app.scss';
-import { ScenariosPage } from './components/Scenarios/ScenariosPage';
+import { ScenariosPage } from './components/ScenariosPage/ScenariosPage';
 
 function App() {
 

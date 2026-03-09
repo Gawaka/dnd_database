@@ -16,7 +16,7 @@ export function CharactersPage() {
         const activeCharacter = characters.find(char=> char.id === activeCharacterId);
 
     return (
-        <main className='app__main'>
+        <section className='app__main'>
             <div className='character-grid'>
             {characters.map(char => (
                 <CharacterCard
@@ -34,6 +34,6 @@ export function CharactersPage() {
                 <Skeleton/>
                 )}
             </div>
-        </main>
+        </section>
     )
 }
