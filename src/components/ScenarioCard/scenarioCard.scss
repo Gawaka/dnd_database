@@ -2,60 +2,86 @@
 
 .scenario-card {
     background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); // М'якша анімація
     border: 1px solid variables.$border-color;
     box-shadow: 0 4px 10px variables.$shadow-color;
     border-radius: 8px;
-    padding: 30px;
-    height: auto;
-    cursor: pointer;
+    padding: 24px;
+    height: 100%; // Щоб всі картки в ряду були однакової висоти
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px 0;
+
+    &:hover:not(.scenario-card--active) {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        border-color: rgba(variables.$text-gold, 0.5);
+    }
 
     &__scenario {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
     &__name {
         text-align: center;
         color: variables.$text-gold;
         font-family: "Cinzel", serif;
-        font-size: 1.3rem;
-        font-weight: 400;
+        font-size: 2rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        min-height: 3.4rem;
     }
 
     &__avatar {
-        width: 800px;
-        height: 500px;
-        border: 2px solid #000;
-        box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.6);
+        width: 80%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        border: 1px solid #000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
         margin: 0 auto;
         margin-bottom: 20px;
     }
 
     &__info {
-        width: 800px;
-        padding: 0 30px;
-        font-size: 1.3rem;
+        width: 80%;
+        padding: 0; 
+        font-size: 1.4rem;
+        line-height: 1.5;
+        flex-grow: 1;
+        margin-bottom: 20px;
+        margin: 0 auto;
+
+        p {
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; // Обмежуємо опис 3-ма рядками
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        strong {
+            font-size: 1.5rem;
+            color: variables.$text-gold-second;
+        }
     }
 }
 
 .scenario-card--active {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.085)), url('../../assets/img/backgrounds/bg-card.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../src/assets/img/backgrounds/bg-card.png');
     border-color: variables.$text-gold;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
     cursor: default;
 
-    img {
-        filter: brightness(1.1);
+    .scenario-card__avatar {
+        filter: brightness(1.1) contrast(1.1);
         border-color: variables.$text-gold;
     }
 }

@@ -1,0 +1,90 @@
+@use '../../style/variables';
+
+.scenario-details {
+    max-width: 1200px; 
+    width: 95%;
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid variables.$border-color;
+    box-shadow: 0 10px 30px variables.$shadow-color;
+    border-radius: 12px;
+    background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
+    color: variables.$text-main;
+
+    &__scenario {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__scenario-title {
+        font-family: "Cinzel", serif;
+        font-size: clamp(2rem, 5vw, 3rem); // Адаптивний розмір шрифту
+        font-weight: 700;
+        color: variables.$text-gold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+        margin-bottom: 10px;
+    }
+
+    &__art-box {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            max-width: 50%; // Картинка ніколи не вилізе за межі батька
+            height: auto;    // Зберігаємо пропорції
+            object-fit: cover;
+            border: 3px solid variables.$border-color;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.01); // Легкий ефект при наведенні
+            }
+        }
+    }
+
+    &__info-box {
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0; // Прибрав зайвий падінг, який зміщував контент
+        line-height: 1.6; // Покращуємо читабельність тексту
+    }
+
+    // Використовуємо Grid для списків, щоб вони виглядали впорядковано
+    &__npcs-list, &__acts-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__npc-card, &__act-card {
+        background: rgba(0, 0, 0, 0.4); // Темна підкладка для тексту
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid variables.$text-gold;
+        height: 100%;
+    }
+
+    &__npc-card-name, &__act-title {
+        color: variables.$text-gold-third;
+        font-family: "Cinzel", serif;
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+    }
+
+    &__npc-card-role, span {
+        color: variables.$text-gold-second;
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+}

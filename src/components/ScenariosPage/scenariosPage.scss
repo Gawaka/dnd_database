@@ -9,15 +9,22 @@
     flex-direction: column;
     justify-content: center;
 
+    &__view-header {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto;
+    }
+
     strong {
         color: variables.$text-gold;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     &__title {
-        margin: 0 0 50px 0;
+        margin: 0 0 20px 0;
         font-family: "Cinzel", serif;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
         color: variables.$text-gold;
         text-align: center;
@@ -27,8 +34,24 @@
     }
 
     &__wrapper {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
+    }
+
+    &__wrapper--details {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-secondary--hide-button {
+        display: none;
+    }
+
+    .button-secondary {
+        color: variables.$text-gold;
+        width: 120px;
+        height: 40px;
     }
 }

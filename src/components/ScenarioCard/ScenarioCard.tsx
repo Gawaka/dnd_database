@@ -14,7 +14,7 @@ interface ScenarioCardProps {
 export function ScenarioCard({scenario, isActive, onSelect}: ScenarioCardProps) {
 
     return(
-        <div className={`scenario-card ${isActive ? 'scenario-card--active' : ''}`} onClick={onSelect}>
+        <div className={`scenario-card ${isActive ? 'scenario-card--active' : ''}`}>
                 <div className="scenario-card__scenario-wrapper">
                     <div className="scenario-card__scenario" >
                         <h3 className="scenario-card__name">{scenario.name}</h3>
@@ -24,7 +24,7 @@ export function ScenarioCard({scenario, isActive, onSelect}: ScenarioCardProps) 
                             <p className="scenario-card__description"><strong>Опис: </strong>{scenario.description}</p>
                             <p className="scenario-card__level"><strong>Рівень гравців: </strong>{scenario.recommendedLevel}</p>
                         </div>
-                        <Button text='More info' className='button' onClick={()=> onclick}/>
+                        <Button text='More info' className='button' onClick={onSelect}/>
                     </div>
                 </div>
         </div>

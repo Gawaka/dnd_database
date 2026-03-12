@@ -3,6 +3,7 @@ import img from '../../public/scenarios/scenario01.jpg'
 
 const scenario01: Scenario = {
     id: 'scenario-01',
+    arts: ['/public/scenarios/scenarios-arts/scenario01-1.jpg', '/public/scenarios/scenarios-arts/scenario01-2.jpg'],
     name: 'Прокляття Чорного Долу',
     avatar: '/public/scenarios/scenario01.jpg', // Краще використовувати абсолютний шлях від папки public
     description: 'Віддалене село на краю стародавнього лісу відрізане від світу густим туманом. Мертві повстають із могил, а ночами з хащів лунає моторошний шепіт. Героям потрібно знайти серце псування, перш ніж туман поглине їх самих.',
@@ -10,7 +11,7 @@ const scenario01: Scenario = {
     genres: ['Темне фентезі', 'Виживання', 'Містика'],
     background: 'Селище Чорний Діл колись було процвітаючим поселенням лісорубів. Але місяць тому місцевий староста випадково розкопав у лісі стародавній кельтський вівтар і вкрав звідти оберег — Кривавий Рубін. Це пробудило дух лісу, який збожеволів від гніву. Тепер селище оточене магічним непроглядним туманом, а мертві повстають з могил.',
     hooks: [
-        'Наманці: Торгова гільдія найняла героїв знайти зниклий караван, який віз припаси в Чорний Діл.',
+        'Найманці: Торгова гільдія найняла героїв знайти зниклий караван, який віз припаси в Чорний Діл.',
         'Пастка: Герої просто зупинилися в селищі на ніч, а на ранок туман закрив усі дороги назад.',
         'Моральний обов\'язок: Місцевий хлопчик дивом вибрався крізь туман і благає про допомогу, вмираючи від виснаження на руках у героїв'
     ],
@@ -70,6 +71,7 @@ const scenario01: Scenario = {
 const scenario02: Scenario = {
     id: 'scenario-02',
     name: 'Спуск у Підморок',
+    arts: ['/public/scenarios/scenarios-arts/scenario02-1.jpg', '/public/scenarios/scenarios-arts/scenario02-2.jpg'],
     avatar: '/public/scenarios/scenario02.jpg',
     description: 'Дварфське шахтарське місто випадково пробило тунель у Підморок — підземний світ, повний небезпек. Дроу почали викрадати шахтарів для своїх темних ритуалів. Партія повинна спуститися в безодню та перекрити прохід.',
     recommendedLevel: '2-4',
@@ -130,12 +132,13 @@ const scenario02: Scenario = {
             'Кільце Захисту (Ring of Protection) або Отрута Дроу з тіла воїна.',
             'Дивна срібна монета з профілем невідомого короля (Орен із Відьмака), знайдена в кігтях монстра.'
         ]
-    }
+    },
 };
 
 const scenario03: Scenario = {
     id: 'scenario-03',
     name: 'Попіл Забутого Короля',
+    arts: ['/public/scenarios/scenarios-arts/scenario03-1.jpg', '/public/scenarios/scenarios-arts/scenario03-2.jpg'],
     avatar: '/scenarios/scenario03.jpg',
     description: 'Землетрус відкрив вхід до гробниці імператора-тирана давнини. Легенди кажуть, що він був похований зі своєю короною, яка дарує владу над драконами. Але його варта досі несе свою службу.',
     recommendedLevel: '3-5',
@@ -197,6 +200,7 @@ const scenario03: Scenario = {
 const scenario04: Scenario = {
     id: 'scenario-04',
     name: 'Змова у Місті Злодіїв',
+        arts: ['/public/scenarios/scenarios-arts/scenario04-1.jpg', '/public/scenarios/scenarios-arts/scenario04-2.jpg'],
     avatar: '/scenarios/scenario04.jpg',
     description: 'У столиці назріває громадянська війна. Дві могутні організації ведуть тіньову війну за контроль над Нижнім Містом. Героїв втягують у небезпечну гру з вибухівкою та зрадами, де нікому не можна довіряти.',
     recommendedLevel: '2-4',
@@ -264,6 +268,7 @@ const scenario04: Scenario = {
 const scenario05: Scenario = {
     id: 'scenario-05',
     name: 'Шепіт з Астралу',
+        arts: ['/public/scenarios/scenarios-arts/scenario05-1.jpg', '/public/scenarios/scenarios-arts/scenario05-2.jpg'],
     avatar: '/scenarios/scenario05.jpg',
     description: 'У небі над гірським хребтом розірвався простір і на землю впав сріблястий корабель-наутилоїд. Іллітіди (пожирачі розуму) намагаються створити нову колонію, перетворюючи місцевих на покірних рабів. Це гонка з часом, поки вони не полагодили двигуни.',
     recommendedLevel: '4-6',
@@ -336,6 +341,7 @@ const scenario05: Scenario = {
 const scenario06: Scenario = {
     id: 'scenario-06',
     name: 'Кривавий Трон Барона',
+        arts: ['/public/scenarios/scenarios-arts/scenario06-1.jpg', '/public/scenarios/scenarios-arts/scenario06-2.jpg'],
     avatar: '/scenarios/scenario06.jpg',
     description: 'Регіон страждає від тиранії нового барона, який ніколи не виходить зі свого замку вдень. Замість золота він збирає "кривавий податок" — молодих селян. Героям доведеться проникнути у готичний замок, щоб покінчити з кровопивцею.',
     recommendedLevel: '4-6',
@@ -408,6 +414,7 @@ const scenario06: Scenario = {
 const scenario07: Scenario = {
     id: 'scenario-07',
     name: 'Буря над Морем Привидів',
+        arts: ['/public/scenarios/scenarios-arts/scenario07-1.jpg', '/public/scenarios/scenarios-arts/scenario07-2.jpg'],
     avatar: '/scenarios/scenario07.jpg',
     description: 'Легендарний піратський галеон, який затонув сто років тому, знову бачать на горизонті. Він приносить із собою шторми та топить торгові судна. Героям потрібно найняти корабель, вийти в Море Привидів та битися з екіпажем нежиті.',
     recommendedLevel: '4-6',
@@ -480,6 +487,7 @@ const scenario07: Scenario = {
 const scenario08: Scenario = {
     id: 'scenario-08',
     name: 'Розколота Вежа Мага',
+    arts: ['/public/scenarios/scenarios-arts/scenario08-1.jpg', '/public/scenarios/scenarios-arts/scenario08-2.jpg'],
     avatar: '/scenarios/scenario08.jpg',
     description: 'Архімаг проводив експерименти з магією часу, але заклинання вийшло з-під контролю. Його вежа тепер існує у кількох часових лініях одночасно, гравітація зламана, а кімнати зациклені. Героям треба зупинити аномалію, поки вона не поглинула все місто.',
     recommendedLevel: '5-7',
@@ -552,6 +560,7 @@ const scenario08: Scenario = {
 const scenario09: Scenario = {
     id: 'scenario-09',
     name: 'Лід і Полум\'я Півночі',
+        arts: ['/public/scenarios/scenarios-arts/scenario09-1.jpg', '/public/scenarios/scenarios-arts/scenario09-2.jpg'],
     avatar: '/scenarios/scenario09.jpg',
     description: 'Племена морозних велетнів об\'єдналися під проводом стародавнього білого дракона і почали наступ на північні кордони королівства. Зима стає аномально холодною, вбиваючи врожаї. Партії потрібно відправитися в крижані гори та розірвати цей союз.',
     recommendedLevel: '6-8',
@@ -624,6 +633,7 @@ const scenario09: Scenario = {
 const scenario10: Scenario = {
     id: 'scenario-10',
     name: 'Заводний Лабіринт',
+    arts: ['/public/scenarios/scenarios-arts/scenario10-1.jpg', '/public/scenarios/scenarios-arts/scenario10-2.jpg'],
     avatar: '/scenarios/scenario10.jpg',
     description: 'Ексцентричний винахідник залишив у спадок усе своє багатство тому, хто зможе пройти його механічне підземелля. Замість орків і гоблінів, героям протистоять пастки, хитромудрі головоломки та смертоносні конструкти з міді та сталі.',
     recommendedLevel: '5-7',
@@ -696,6 +706,7 @@ const scenario10: Scenario = {
 const scenario11: Scenario = {
     id: 'scenario-11',
     name: 'Дике Полювання',
+    arts: ['/public/scenarios/scenarios-arts/scenario11-1.jpg', '/public/scenarios/scenarios-arts/scenario11-2.jpg'],
     avatar: '/scenarios/scenario11.jpg',
     description: 'Межа між Матеріальним планом і Світом Фей стоншилася. Прекрасні, але жорстокі архіфеї почали "Дике Полювання", викрадаючи людей заради розваги. Героям доведеться потрапити у яскравий, психоделічний ліс, де не діють закони логіки, щоб врятувати полонених.',
     recommendedLevel: '6-8',
@@ -768,6 +779,7 @@ const scenario11: Scenario = {
 const scenario12: Scenario = {
     id: 'scenario-12',
     name: 'Вівтар Демонічного Принца',
+    arts: ['/public/scenarios/scenarios-arts/scenario12-1.jpg', '/public/scenarios/scenarios-arts/scenario12-2.jpg'],
     avatar: '/scenarios/scenario12.jpg',
     description: 'Культисти в серці великого міста успішно відкрили портал у Безодню (Abyss). Небо стало криваво-червоним, а на вулиці вирвалися орди потойбічних монстрів. Це гонка з часом — герої повинні пробитися через охоплене полум\'ям місто до головного собору та перервати ритуал.',
     recommendedLevel: '8-10',

@@ -15,6 +15,7 @@ export interface Act {
 
 export interface Scenario {
     id: string;
+    arts: string[];
     name: string;
     avatar: string;
     description: string; // Короткий опис для прев'ю (картки)
