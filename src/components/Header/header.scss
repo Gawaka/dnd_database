@@ -1,80 +1,202 @@
 @use '../../style/variables';
 
-
-
 .header {
     font-family: "Cinzel", serif;
     font-weight: 400;
-    height: 150px;
-    margin-bottom: 30px;
+    min-height: 120px; 
+    padding: 10px 40px;
+    margin-bottom: 40px;
     background-image: url('../../assets/img/backgrounds/header-bg.png');
-    background-size: cover;
-    background-position: bottom;
-    background-position-x: 100px;
-    background-position-y: bottom;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8);
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     z-index: 100;
     position: relative;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
 
     &__title-wrapper {
-        width: auto;
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
     }
 
     &__logo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
         filter: 
-            drop-shadow(0 8px 8px rgba(0, 0, 0, 0.8)) 
-            drop-shadow(0 0 30px rgba(234, 234, 234, 0.3)); 
-            
-        // Анімація (опціонально): пульсація при наведенні
-    }
+            drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8)) 
+            drop-shadow(0 0 15px rgba(variables.$text-gold, 0.2)); 
+        transition: transform 0.5s ease;
 
-    &__title {
-        font-family: 'Cinzel', serif;
-        text-transform: uppercase;
-        font-size: 3rem;
-        color: variables.$text-main;
-        text-shadow: 
-            0 5px 8px rgba(0, 0, 0, 0.9), 
-            0 0 20px rgba(255, 255, 255, 0.2);
-    }
-
-    &__navigate-wrapper {
-        display: flex;
-        flex-direction: row;
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
+        &:hover {
+            transform: rotate(10deg) scale(1.1);
         }
     }
 
-    &__navigate-items {
-        font-size: 1.1rem;
-        cursor: pointer;
+    &__title {
+        text-transform: uppercase;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        color: variables.$text-main;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        margin: 0;
     }
 
-    &__navigate-item { // у файлі апп стилі для посилань (а)
+    &__navigate-desktop {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__navigate-item-desktop {
         color: variables.$text-main;
         font-size: 1.4rem;
         text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &.active {
+            color: variables.$text-gold;
+            text-shadow: 0 0 10px rgba(variables.$text-gold, 0.5);
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: variables.$text-gold;
+                box-shadow: 0 0 5px variables.$text-gold;
+            }
+        }
+
+        &:hover {
+            color: variables.$text-gold;
+            transform: translateY(-2px);
+        }
     }
 
-    &__navigate-item:hover { // у файлі апп на посиланнях стоїть такий самий ховер
-        transition: ease-in-out 0.2s;
-        transform: scale(1.1);
-        color: variables.$text-gold;
+    &__navigate-burger {
+        display: none;
+    }
+
+    &__burger-btn {
+        display: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 35px;
+        height: 25px;
+        position: relative;
+        z-index: 1488;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: variables.$dark-color;
+            margin-bottom: 6px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 2px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+            &:last-child { margin-bottom: 0; }
+        }
+
+        &.active {
+            span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+            span:nth-child(2) { opacity: 0; transform: translateX(-20px); }
+            span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+        }
+    }
+
+    &__navigate { //компутер
+        @media (min-width: 1025px) {
+            .header__navigate-items {
+                display: flex;
+                gap: 40px;
+                list-style: none;
+            }
+        }
+    }
+
+    &__navigate-item {
+        color: variables.$text-main;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+
+        &.active {
+            color: variables.$text-gold;
+            text-shadow: 0 0 10px rgba(variables.$text-gold, 0.5);
+        }
+    }
+}
+
+// планш та мобілка
+@media (max-width: 1024px) {
+    .header {
+        padding: 5px 15px;
+        align-items: start;
+
+        &__title-wrapper {
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__burger-btn { 
+            display: block;
+            margin-top: 15px;
+        }
+
+        &__navigate {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-left: 1px solid variables.$text-gold-third;
+            padding: 120px 40px;
+            transition: right 0.4s ease-in-out;
+            z-index: 1000;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.9);
+
+            &.open {
+                right: 0;
+            }
+        }
+
+        &__navigate-items {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        &__navigate-item {
+            font-size: 1.6rem;
+            display: block;
+            width: 100%;
+        }
     }
 }

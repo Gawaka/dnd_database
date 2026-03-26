@@ -1,15 +1,23 @@
+@use '../../style/variables';
 
 .character-grid {
-    width: 70%;
-    height: 100%;
-    margin: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    flex: 1;
 }
 
-.character-grid-title {
-    display: block;
-    text-align: center;
-    width: 100%;
+.details-panel {
+    position: sticky;
+    top: 40px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-panel {
+    @include variables.devices(variables.$tablet) {
+        width: 100%;
+        position: static;
+    }
 }

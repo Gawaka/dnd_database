@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/img/logo.svg';
 import './header.scss';
+import { Button } from '../Button/Button';
 
 export function Header() {
+    const [isOpen, setIsOpen] = useState(Boolean);
+
+    const toggleMenu = ()=> setIsOpen(!isOpen);
     
     return(
     <header className='header'>
@@ -11,21 +16,46 @@ export function Header() {
             <h1 className='header__title'>Dungeons & Dragons database</h1>
         </div>
         <div className="header__navigate-wrapper">
-            <nav className='header__navigate'>
+            {
+                <button
+                className={`header__burger-btn ${isOpen ? 'active' : ''}`}
+                onClick={toggleMenu}
+                aria-label="Menu"
+                >
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            }
+            <nav className={`header__navigate ${isOpen ? 'open' : ''}`}>
                 <ul className="header__navigate-items">
                     <li>
-                        <NavLink className="header__navigate-item" to='/'>Characters</NavLink>
+                        <NavLink onClick={()=> setIsOpen(false)} className="header__navigate-item" to='/'>Characters</NavLink>
                     </li>
                     <li>
-                        <NavLink className="header__navigate-item" to='/racesPage'>Races</NavLink>
+                        <NavLink onClick={()=> setIsOpen(false)} className="header__navigate-item" to='/racesPage'>Races</NavLink>
                     </li>
                     <li>
-                        <NavLink className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
+                        <NavLink onClick={()=> setIsOpen(false)} className="header__navigate-item" to='/scenarios'>Scenarios</NavLink>
                     </li>
                     <li>
-                        <NavLink className="header__navigate-item" to='/equipment'>Equipment</NavLink>
+                        <NavLink onClick={()=> setIsOpen(false)} className="header__navigate-item" to='/equipment'>Equipment</NavLink>
                     </li>
                 </ul>
+                {/* <ul className="header__navigate-burger">
+                    <li>
+                        <NavLink className="header__navigate-burger-item" to='/'>Characters</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-burger-item" to='/racesPage'>Races</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-burger-item" to='/scenarios'>Scenarios</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="header__navigate-burger-item" to='/equipment'>Equipment</NavLink>
+                    </li>
+                </ul> */}
             </nav>
         </div>
     </header>

@@ -37,9 +37,16 @@ export function Details({character, onClose}: DetailsProps) {
                             <p><strong>Ціль:</strong> {character.goal}</p>
                         </div>
                     </div>
-                    
-                    <Button className="button" text="Skills and equipment" onClick={()=> setIsFlipped(true)}/>
-                    <Button className="button-secondary" text="Hide info" onClick={onClose}/>
+                    <div className="button-group">
+                        <Button 
+                            className="button" 
+                            text="Skills and info" 
+                            onClick={() => setIsFlipped(true)}
+                        />
+                        <Button className="button-secondary" text="Hide info" onClick={onClose}/>
+                    </div>
+                    {/* <Button className="button" text="Skills and equipment" onClick={()=> setIsFlipped(true)}/>
+                    <Button className="button-secondary" text="Hide info" onClick={onClose}/> */}
                 </div>
                 <div className="details__back">
                     <CharacterSheet character={character}/>

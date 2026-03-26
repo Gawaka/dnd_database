@@ -19,7 +19,7 @@
 
     &__scenario-title {
         font-family: "Cinzel", serif;
-        font-size: clamp(2rem, 5vw, 3rem); // Адаптивний розмір шрифту
+        font-size: clamp(2rem, 5vw, 3rem);
         font-weight: 700;
         color: variables.$text-gold;
         text-align: center;
@@ -35,8 +35,8 @@
         gap: 20px;
 
         img {
-            max-width: 50%; // Картинка ніколи не вилізе за межі батька
-            height: auto;    // Зберігаємо пропорції
+            max-width: 50%;
+            height: auto;
             object-fit: cover;
             border: 3px solid variables.$border-color;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
@@ -44,7 +44,7 @@
             transition: transform 0.3s ease;
 
             &:hover {
-                transform: scale(1.01); // Легкий ефект при наведенні
+                transform: scale(1.01);
             }
         }
     }
@@ -54,11 +54,11 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-        padding: 0; // Прибрав зайвий падінг, який зміщував контент
-        line-height: 1.6; // Покращуємо читабельність тексту
+        padding: 0;
+        line-height: 1.6;
     }
 
-    // Використовуємо Grid для списків, щоб вони виглядали впорядковано
+    // grid для списків, щоб вони виглядали впорядковано
     &__npcs-list, &__acts-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -68,7 +68,7 @@
     }
 
     &__npc-card, &__act-card {
-        background: rgba(0, 0, 0, 0.4); // Темна підкладка для тексту
+        background: rgba(0, 0, 0, 0.4);
         padding: 20px;
         border-radius: 8px;
         border-left: 4px solid variables.$text-gold;
