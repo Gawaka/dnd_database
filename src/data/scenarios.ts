@@ -1,5 +1,5 @@
 import type { Scenario } from "../types/scenario";
-import img from '../../public/scenarios/scenario01.jpg'
+
 
 const scenario01: Scenario = {
     id: 'scenario-01',

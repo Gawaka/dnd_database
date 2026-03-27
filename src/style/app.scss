@@ -36,6 +36,7 @@ ul {
 .app__main {
 
     @include variables.devices(variables.$tablet) {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }

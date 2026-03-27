@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/img/logo.svg';
 import './header.scss';
-import { Button } from '../Button/Button';
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(Boolean);
@@ -42,20 +41,6 @@ export function Header() {
                         <NavLink onClick={()=> setIsOpen(false)} className="header__navigate-item" to='/equipment'>Equipment</NavLink>
                     </li>
                 </ul>
-                {/* <ul className="header__navigate-burger">
-                    <li>
-                        <NavLink className="header__navigate-burger-item" to='/'>Characters</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="header__navigate-burger-item" to='/racesPage'>Races</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="header__navigate-burger-item" to='/scenarios'>Scenarios</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="header__navigate-burger-item" to='/equipment'>Equipment</NavLink>
-                    </li>
-                </ul> */}
             </nav>
         </div>
     </header>
