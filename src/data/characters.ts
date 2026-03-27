@@ -3,7 +3,7 @@ import type { Character } from '../types/character';
 const hero01: Character = {
     id: '1',
     name: 'Lefortaz',
-    image: '/public/avatars/hero01.png',
+    image: '/avatars/hero01.png',
     race: {id: 'high-elf', name: 'High Elf', bonuses: { dexterity: 2, intelligence: 1 }},
     class: {id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
@@ -27,7 +27,7 @@ const hero01: Character = {
 const hero02: Character = {
     id: '2',
     name: 'Grale  ',
-    image: '/public/avatars/hero02.png',
+    image: '/avatars/hero02.png',
     race: {id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1 }},
     class: {id: 'wizard', name: 'Wizard', hitDie: 6, icon: '/class-icons/wizard.svg'},
     level: 1,
@@ -52,7 +52,7 @@ const hero02: Character = {
 const hero03: Character = {
     id: '3',
     name: 'Tilodar',
-    image: '/public/avatars/hero03.png',
+    image: '/avatars/hero03.png',
     race: {id: 'half-elf', name: 'Half Elf', bonuses: {charisma: 2, dexterity: 1, constitution: 1}},
     class: {id: 'rogue', name: 'Rogue', hitDie: 8, icon: '/class-icons/rogue.svg'},
     level: 1,
@@ -76,7 +76,7 @@ const hero03: Character = {
 const hero04: Character = {
     id: '4',
     name: 'Leadrif',
-    image: '/public/avatars/hero04.png',
+    image: '/avatars/hero04.png',
     race: {id: 'hill-dwarf', name: 'Hill Dwarf', bonuses: {constitution: 2, wisdom: 1}},
     class: {id: 'paladin', name: 'Paladin', hitDie: 10, icon: '/class-icons/paladin.svg'},
     level: 1,
@@ -100,7 +100,7 @@ const hero04: Character = {
 const hero05: Character = {
     id: '5',
     name: 'Kargoth',
-    image: '/public/avatars/hero05.png',
+    image: '/avatars/hero05.png',
     race: { id: 'half-orc', name: 'Half Orc', bonuses: { strength: 2, constitution: 1 }},
     class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '/class-icons/barbarian.svg'},
     level: 1,
@@ -124,7 +124,7 @@ const hero05: Character = {
 const hero06: Character = {
     id: '6',
     name: 'Victus',
-    image: '/public/avatars/hero06.png',
+    image: '/avatars/hero06.png',
     race: { id: 'tiefling', name: 'Tiefling', bonuses: { charisma: 2, intelligence: 1 }},
     class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '/class-icons/bard.svg'},
     level: 1,
@@ -149,7 +149,7 @@ const hero06: Character = {
 const hero07: Character = {
     id: '7',
     name: 'Broma',
-    image: '/public/avatars/hero07.png',
+    image: '/avatars/hero07.png',
     race: { id: 'hill-dwarf', name: 'Hill Dwarf', bonuses: {constitution: 2, wisdom: 1}},
     class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '/class-icons/cleric.svg'},
     level: 1,
@@ -174,7 +174,7 @@ const hero07: Character = {
 const hero08: Character = {
     id: '8',
     name: 'Elara',
-    image: '/public/avatars/hero08.png',
+    image: '/avatars/hero08.png',
     race: { id: 'wood-elf', name: 'Wood Elf', bonuses: {dexterity: 2, wisdom: 1}},
     class: { id: 'druid', name: 'Druid', hitDie: 8, icon: '/class-icons/druid.svg'},
     level: 1,
@@ -199,7 +199,7 @@ const hero08: Character = {
 const hero09: Character = {
     id: '9',
     name: 'Shen',
-    image: '/public/avatars/hero09.png',
+    image: '/avatars/hero09.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
     class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '/class-icons/monk.svg'},
     level: 1,
@@ -223,7 +223,7 @@ const hero09: Character = {
 const hero10: Character = {
     id: '10',
     name: 'Milo',
-    image: '/public/avatars/hero10.png',
+    image: '/avatars/hero10.png',
     race: { id: 'halfling', name: 'Halfling', bonuses: {dexterity: 2, charisma: 1}},
     class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '/class-icons/ranger.svg'},
     level: 1,
@@ -247,7 +247,7 @@ const hero10: Character = {
 const hero11: Character = {
     id: '11',
     name: 'Ignis',
-    image: '/public/avatars/hero11.png',
+    image: '/avatars/hero11.png',
     race: { id: 'dragonborn', name: 'Dragonborn', bonuses: {strength: 2, charisma: 1}},
     class: { id: 'sorcerer', name: 'Sorcerer', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
@@ -272,7 +272,7 @@ const hero11: Character = {
 const hero12: Character = {
     id: '12',
     name: 'Morgana',
-    image: '/public/avatars/hero12.png',
+    image: '/avatars/hero12.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: {dexterity: 2, charisma: 1}},
     class: { id: 'warlock', name: 'Warlock', hitDie: 8, icon: '/class-icons/warlock.svg'},
     level: 1,
@@ -297,7 +297,7 @@ const hero12: Character = {
 const hero13: Character = {
     id: '13',
     name: 'Zanna',
-    image: '/public/avatars/hero13.png',
+    image: '/avatars/hero13.png',
     race: { id: 'rock-gnome', name: 'Rock Gnome', bonuses: { intelligence: 2, constitution: 1}},
     class: { id: 'artificer', name: 'Artificer', hitDie: 8, icon: '/class-icons/artificer.svg'},
     level: 1,
@@ -339,7 +339,7 @@ const hero13: Character = {
 const hero14: Character = {
     id: '14',
     name: 'Laeroth',
-    image: '/public/avatars/hero14.png',
+    image: '/avatars/hero14.png',
     race: { id: 'githyanki', name: 'Githyanki', bonuses: {strength: 2, intelligence: 1}},
     class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
@@ -371,7 +371,7 @@ const hero14: Character = {
 const hero15: Character = {
     id: '15',
     name: 'Darius',
-    image: '/public/avatars/hero15.png',
+    image: '/avatars/hero15.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
     class: { id: 'paladin', name: 'Paladin (Oathbreaker)', hitDie: 10, icon: '/class-icons/paladin.svg'},
     level: 1,
@@ -388,7 +388,7 @@ const hero15: Character = {
 const hero16: Character = {
     id: '16',
     name: 'Fizzwick',
-    image: '/public/avatars/hero16.png',
+    image: '/avatars/hero16.png',
     race: { id: 'gnome', name: 'Rock Gnome', bonuses: {intelligence: 2, constitution: 1}},
     class: { id: 'wizard', name: 'Wizard', hitDie: 6, icon: '/class-icons/wizard.svg'},
     level: 1,
@@ -406,7 +406,7 @@ const hero16: Character = {
 const hero17: Character = {
     id: '17',
     name: 'Nyx',
-    image: '/public/avatars/hero17.png',
+    image: '/avatars/hero17.png',
     race: { id: 'tiefling', name: 'Tiefling', bonuses: {charisma: 2, intelligence: 1}},
     class: { id: 'rogue', name: 'Rogue', hitDie: 8, icon: '/class-icons/rogue.svg'},
     level: 1,
@@ -424,7 +424,7 @@ const hero17: Character = {
 const hero18: Character = {
     id: '18',
     name: 'Thorin',
-    image: '/public/avatars/hero18.png',
+    image: '/avatars/hero18.png',
     race: { id: 'dwarf', name: 'Mountain Dwarf', bonuses: {constitution: 2, strength: 2}},
     class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '/class-icons/barbarian.svg'},
     level: 1,
@@ -441,7 +441,7 @@ const hero18: Character = {
 const hero19: Character = {
     id: '19',
     name: 'Sylas',
-    image: '/public/avatars/hero19.png',
+    image: '/avatars/hero19.png',
     race: { id: 'half-elf', name: 'Half-Elf', bonuses: { charisma: 2, dexterity: 1, constitution: 1}},
     class: { id: 'warlock', name: 'Warlock (Archfey)', hitDie: 8, icon: '/class-icons/warlock.svg'},
     level: 1,
@@ -459,7 +459,7 @@ const hero19: Character = {
 const hero20: Character = {
     id: '20',
     name: 'Grom',
-    image: '/public/avatars/hero20.png',
+    image: '/avatars/hero20.png',
     race: { id: 'half-orc', name: 'Half Orc', bonuses: {strength: 2, constitution: 1}},
     class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '/class-icons/ranger.svg'},
     level: 1,
@@ -476,7 +476,7 @@ const hero20: Character = {
 const hero21: Character = {
     id: '21',
     name: 'Vanrya',
-    image: '/public/avatars/hero21.png',
+    image: '/avatars/hero21.png',
     race: { id: 'human', name: 'Human', bonuses: {strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
     class: { id: 'druid', name: 'Druid (Spore)', hitDie: 8, icon: '/class-icons/druid.svg'},
     level: 1,
@@ -494,7 +494,7 @@ const hero21: Character = {
 const hero22: Character = {
     id: '22',
     name: 'Lyra',
-    image: '/public/avatars/hero22.png',
+    image: '/avatars/hero22.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: { dexterity: 2, charisma: 1 }},
     class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '/class-icons/bard.svg'},
     level: 1,
@@ -512,7 +512,7 @@ const hero22: Character = {
 const hero23: Character = {
     id: '23',
     name: 'Kael',
-    image: '/public/avatars/hero23.png',
+    image: '/avatars/hero23.png',
     race: { id: 'high elf', name: 'High Elf', bonuses: { dexterity: 2, intelligence: 1 }},
     class: { id: 'cleric', name: 'Cleric (Light)', hitDie: 8, icon: '/class-icons/cleric.svg'},
     level: 1,
@@ -530,7 +530,7 @@ const hero23: Character = {
 const hero24: Character = {
     id: '24',
     name: 'Toar',
-    image: '/public/avatars/hero24.png',
+    image: '/avatars/hero24.png',
     race: { id: 'dragonborn', name: 'Silver Dragonborn', bonuses: { strength: 2, charisma: 1}},
     class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
@@ -547,7 +547,7 @@ const hero24: Character = {
 const hero25: Character = {
     id: '25',
     name: 'Ember',
-    image: '/public/avatars/hero25.png',
+    image: '/avatars/hero25.png',
     race: { id: 'genasi', name: 'Fire Genasi', bonuses: { constitution: 2, intelligence: 1 }},
     class: { id: 'sorcerer', name: 'Sorcerer (Draconic)', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
@@ -565,7 +565,7 @@ const hero25: Character = {
 const hero26: Character = {
     id: '26',
     name: 'Swift',
-    image: '/public/avatars/hero26.png',
+    image: '/avatars/hero26.png',
     race: { id: 'wood-elf', name: 'Wood Elf', bonuses: { dexterity: 2, wisdom: 1}},
     class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '/class-icons/monk.svg'},
     level: 1,
@@ -582,7 +582,7 @@ const hero26: Character = {
 const hero27: Character = {
     id: '27',
     name: 'Aldous',
-    image: '/public/avatars/hero27.png',
+    image: '/avatars/hero27.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
     class: { id: 'artificer', name: 'Artificer (Alchemist)', hitDie: 8, icon: '/class-icons/artificer.svg'},
     level: 1,
@@ -619,7 +619,7 @@ const hero27: Character = {
 const hero28: Character = {
     id: '28',
     name: 'Vaelar',
-    image: '/public/avatars/hero28.png',
+    image: '/avatars/hero28.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: {dexterity: 2, charisma: 1}},
     class: { id: 'sorcerer', name: 'Sorcerer (Shadow Magic)', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
@@ -656,7 +656,7 @@ const hero28: Character = {
 const hero29: Character = {
     id: '29',
     name: 'Q\'al',
-    image: '/public/avatars/hero29.png',
+    image: '/avatars/hero29.png',
     race: { id: 'aarakocra', name: 'Aarakocra', bonuses: {wisdom: 2}},
     class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '/class-icons/cleric.svg' },
     level: 1,

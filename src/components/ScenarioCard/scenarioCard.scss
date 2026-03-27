@@ -1,7 +1,7 @@
 @use '../../style/variables';
 
 .scenario-card {
-    background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
+    background-image: url('/public/backgrounds/bg-card.png');
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); // М'якша анімація
     border: 1px solid variables.$border-color;
     box-shadow: 0 4px 10px variables.$shadow-color;
@@ -61,7 +61,7 @@
         p {
             margin-bottom: 8px;
             display: -webkit-box;
-            -webkit-line-clamp: 3; // Обмежуємо опис 3-ма рядками
+            // -webkit-line-clamp: 3; // Обмежуємо опис 3-ма рядками
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -74,7 +74,7 @@
 }
 
 .scenario-card--active {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../src/assets/img/backgrounds/bg-card.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/backgrounds/bg-card.png');
     border-color: variables.$text-gold;
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
