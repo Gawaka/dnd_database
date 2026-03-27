@@ -1,5 +1,5 @@
 import './emptyState.scss';
-import image from '../../assets/img/dice.svg'
+import image from '../../../public/dice.svg'
 
 interface EmptystateProps{
     text: string;

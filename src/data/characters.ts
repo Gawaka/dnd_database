@@ -3,9 +3,9 @@ import type { Character } from '../types/character';
 const hero01: Character = {
     id: '1',
     name: 'Lefortaz',
-    image: '../src/assets/img/avatars/hero01.png',
+    image: '/public/avatars/hero01.png',
     race: {id: 'high-elf', name: 'High Elf', bonuses: { dexterity: 2, intelligence: 1 }},
-    class: {id: 'fighter', name: 'Fighter', hitDie: 10, icon: '../src/assets/img/class-icons/fighter.svg'},
+    class: {id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
     stats: {
         strength: 15,
@@ -27,9 +27,9 @@ const hero01: Character = {
 const hero02: Character = {
     id: '2',
     name: 'Grale  ',
-    image: '../src/assets/img/avatars/hero02.png',
+    image: '/public/avatars/hero02.png',
     race: {id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1 }},
-    class: {id: 'wizard', name: 'Wizard', hitDie: 6, icon: '../src/assets/img/class-icons/wizard.svg'},
+    class: {id: 'wizard', name: 'Wizard', hitDie: 6, icon: '/class-icons/wizard.svg'},
     level: 1,
     stats: {
         strength: 8,
@@ -52,9 +52,9 @@ const hero02: Character = {
 const hero03: Character = {
     id: '3',
     name: 'Tilodar',
-    image: '../src/assets/img/avatars/hero03.png',
+    image: '/public/avatars/hero03.png',
     race: {id: 'half-elf', name: 'Half Elf', bonuses: {charisma: 2, dexterity: 1, constitution: 1}},
-    class: {id: 'rogue', name: 'Rogue', hitDie: 8, icon: '../src/assets/img/class-icons/rogue.svg'},
+    class: {id: 'rogue', name: 'Rogue', hitDie: 8, icon: '/class-icons/rogue.svg'},
     level: 1,
     stats: {
         strength: 8,
@@ -76,9 +76,9 @@ const hero03: Character = {
 const hero04: Character = {
     id: '4',
     name: 'Leadrif',
-    image: '../src/assets/img/avatars/hero04.png',
+    image: '/public/avatars/hero04.png',
     race: {id: 'hill-dwarf', name: 'Hill Dwarf', bonuses: {constitution: 2, wisdom: 1}},
-    class: {id: 'paladin', name: 'Paladin', hitDie: 10, icon: '../src/assets/img/class-icons/paladin.svg'},
+    class: {id: 'paladin', name: 'Paladin', hitDie: 10, icon: '/class-icons/paladin.svg'},
     level: 1,
     stats: {
         strength: 16,
@@ -100,9 +100,9 @@ const hero04: Character = {
 const hero05: Character = {
     id: '5',
     name: 'Kargoth',
-    image: '../src/assets/img/avatars/hero05.png',
+    image: '/public/avatars/hero05.png',
     race: { id: 'half-orc', name: 'Half Orc', bonuses: { strength: 2, constitution: 1 }},
-    class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '../src/assets/img/class-icons/barbarian.svg'},
+    class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '/class-icons/barbarian.svg'},
     level: 1,
     stats: {
         strength: 16,
@@ -124,9 +124,9 @@ const hero05: Character = {
 const hero06: Character = {
     id: '6',
     name: 'Victus',
-    image: '../src/assets/img/avatars/hero06.png',
+    image: '/public/avatars/hero06.png',
     race: { id: 'tiefling', name: 'Tiefling', bonuses: { charisma: 2, intelligence: 1 }},
-    class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '../src/assets/img/class-icons/bard.svg'},
+    class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '/class-icons/bard.svg'},
     level: 1,
     stats: {
         strength: 8,
@@ -149,9 +149,9 @@ const hero06: Character = {
 const hero07: Character = {
     id: '7',
     name: 'Broma',
-    image: '../src/assets/img/avatars/hero07.png',
+    image: '/public/avatars/hero07.png',
     race: { id: 'hill-dwarf', name: 'Hill Dwarf', bonuses: {constitution: 2, wisdom: 1}},
-    class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '../src/assets/img/class-icons/cleric.svg'},
+    class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '/class-icons/cleric.svg'},
     level: 1,
     stats: {
         strength: 14,
@@ -174,9 +174,9 @@ const hero07: Character = {
 const hero08: Character = {
     id: '8',
     name: 'Elara',
-    image: '../src/assets/img/avatars/hero08.png',
+    image: '/public/avatars/hero08.png',
     race: { id: 'wood-elf', name: 'Wood Elf', bonuses: {dexterity: 2, wisdom: 1}},
-    class: { id: 'druid', name: 'Druid', hitDie: 8, icon: '../src/assets/img/class-icons/druid.svg'},
+    class: { id: 'druid', name: 'Druid', hitDie: 8, icon: '/class-icons/druid.svg'},
     level: 1,
     stats: {
         strength: 10,
@@ -199,9 +199,9 @@ const hero08: Character = {
 const hero09: Character = {
     id: '9',
     name: 'Shen',
-    image: '../src/assets/img/avatars/hero09.png',
+    image: '/public/avatars/hero09.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
-    class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '../src/assets/img/class-icons/monk.svg'},
+    class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '/class-icons/monk.svg'},
     level: 1,
     stats: {
         strength: 10,
@@ -223,9 +223,9 @@ const hero09: Character = {
 const hero10: Character = {
     id: '10',
     name: 'Milo',
-    image: '../src/assets/img/avatars/hero10.png',
+    image: '/public/avatars/hero10.png',
     race: { id: 'halfling', name: 'Halfling', bonuses: {dexterity: 2, charisma: 1}},
-    class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '../src/assets/img/class-icons/ranger.svg'},
+    class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '/class-icons/ranger.svg'},
     level: 1,
     stats: {
         strength: 10,
@@ -247,9 +247,9 @@ const hero10: Character = {
 const hero11: Character = {
     id: '11',
     name: 'Ignis',
-    image: '../src/assets/img/avatars/hero11.png',
+    image: '/public/avatars/hero11.png',
     race: { id: 'dragonborn', name: 'Dragonborn', bonuses: {strength: 2, charisma: 1}},
-    class: { id: 'sorcerer', name: 'Sorcerer', hitDie: 6, icon: '../src/assets/img/class-icons/sorcerer.svg'},
+    class: { id: 'sorcerer', name: 'Sorcerer', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
     stats: {
         strength: 10,
@@ -272,9 +272,9 @@ const hero11: Character = {
 const hero12: Character = {
     id: '12',
     name: 'Morgana',
-    image: '../src/assets/img/avatars/hero12.png',
+    image: '/public/avatars/hero12.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: {dexterity: 2, charisma: 1}},
-    class: { id: 'warlock', name: 'Warlock', hitDie: 8, icon: '../src/assets/img/class-icons/warlock.svg'},
+    class: { id: 'warlock', name: 'Warlock', hitDie: 8, icon: '/class-icons/warlock.svg'},
     level: 1,
     stats: {
         strength: 8,
@@ -297,9 +297,9 @@ const hero12: Character = {
 const hero13: Character = {
     id: '13',
     name: 'Zanna',
-    image: '../src/assets/img/avatars/hero13.png',
+    image: '/public/avatars/hero13.png',
     race: { id: 'rock-gnome', name: 'Rock Gnome', bonuses: { intelligence: 2, constitution: 1}},
-    class: { id: 'artificer', name: 'Artificer', hitDie: 8, icon: '../src/assets/img/class-icons/artificer.svg'},
+    class: { id: 'artificer', name: 'Artificer', hitDie: 8, icon: '/class-icons/artificer.svg'},
     level: 1,
     stats: {
         strength: 10,
@@ -339,9 +339,9 @@ const hero13: Character = {
 const hero14: Character = {
     id: '14',
     name: 'Laeroth',
-    image: '../src/assets/img/avatars/hero14.png',
+    image: '/public/avatars/hero14.png',
     race: { id: 'githyanki', name: 'Githyanki', bonuses: {strength: 2, intelligence: 1}},
-    class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '../src/assets/img/class-icons/fighter.svg'},
+    class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
     stats: {
         strength: 16,
@@ -371,9 +371,9 @@ const hero14: Character = {
 const hero15: Character = {
     id: '15',
     name: 'Darius',
-    image: '../src/assets/img/avatars/hero15.png',
+    image: '/public/avatars/hero15.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
-    class: { id: 'paladin', name: 'Paladin (Oathbreaker)', hitDie: 10, icon: '../src/assets/img/class-icons/paladin.svg'},
+    class: { id: 'paladin', name: 'Paladin (Oathbreaker)', hitDie: 10, icon: '/class-icons/paladin.svg'},
     level: 1,
     stats: { strength: 16, dexterity: 10, constitution: 14, intelligence: 10, wisdom: 8, charisma: 16 },
     bio: 'Колишній лицар світлого ордену, який розчарувався в кодексі честі після зради командування. Тепер він служить лише собі та темним силам, які дали йому владу помститися.',
@@ -388,9 +388,9 @@ const hero15: Character = {
 const hero16: Character = {
     id: '16',
     name: 'Fizzwick',
-    image: '../src/assets/img/avatars/hero16.png',
+    image: '/public/avatars/hero16.png',
     race: { id: 'gnome', name: 'Rock Gnome', bonuses: {intelligence: 2, constitution: 1}},
-    class: { id: 'wizard', name: 'Wizard', hitDie: 6, icon: '../src/assets/img/class-icons/wizard.svg'},
+    class: { id: 'wizard', name: 'Wizard', hitDie: 6, icon: '/class-icons/wizard.svg'},
     level: 1,
     stats: { strength: 8, dexterity: 14, constitution: 14, intelligence: 17, wisdom: 10, charisma: 12 },
     bio: 'Геній ілюзій, який використовує магію не для війни, а для створення грандіозних шоу та обману багатіїв. Він вважає реальність занадто нудною і постійно намагається її "прикрасити".',
@@ -406,9 +406,9 @@ const hero16: Character = {
 const hero17: Character = {
     id: '17',
     name: 'Nyx',
-    image: '../src/assets/img/avatars/hero17.png',
+    image: '/public/avatars/hero17.png',
     race: { id: 'tiefling', name: 'Tiefling', bonuses: {charisma: 2, intelligence: 1}},
-    class: { id: 'rogue', name: 'Rogue', hitDie: 8, icon: '../src/assets/img/class-icons/rogue.svg'},
+    class: { id: 'rogue', name: 'Rogue', hitDie: 8, icon: '/class-icons/rogue.svg'},
     level: 1,
     stats: { strength: 8, dexterity: 15, constitution: 12, intelligence: 14, wisdom: 10, charisma: 16 },
     bio: 'Вона виросла на вулицях, де її рогата зовнішність викликала страх. Вона навчилася використовувати це, ставши найманим шпигуном. Вона не краде гаманці, вона краде секрети.',
@@ -424,9 +424,9 @@ const hero17: Character = {
 const hero18: Character = {
     id: '18',
     name: 'Thorin',
-    image: '../src/assets/img/avatars/hero18.png',
+    image: '/public/avatars/hero18.png',
     race: { id: 'dwarf', name: 'Mountain Dwarf', bonuses: {constitution: 2, strength: 2}},
-    class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '../src/assets/img/class-icons/barbarian.svg'},
+    class: { id: 'barbarian', name: 'Barbarian', hitDie: 12, icon: '/class-icons/barbarian.svg'},
     level: 1,
     stats: { strength: 17, dexterity: 12, constitution: 17, intelligence: 8, wisdom: 10, charisma: 8 },
     bio: 'Воїн, який впадає у бойовий транс, забуваючи про біль. Він не носить обладунків, покладаючись на свою товсту шкіру та лють. Його вигнали з кузні за те, що він ламав метал замість того, щоб кувати його.',
@@ -441,9 +441,9 @@ const hero18: Character = {
 const hero19: Character = {
     id: '19',
     name: 'Sylas',
-    image: '../src/assets/img/avatars/hero19.png',
+    image: '/public/avatars/hero19.png',
     race: { id: 'half-elf', name: 'Half-Elf', bonuses: { charisma: 2, dexterity: 1, constitution: 1}},
-    class: { id: 'warlock', name: 'Warlock (Archfey)', hitDie: 8, icon: '../src/assets/img/class-icons/warlock.svg'},
+    class: { id: 'warlock', name: 'Warlock (Archfey)', hitDie: 8, icon: '/class-icons/warlock.svg'},
     level: 1,
     stats: { strength: 8, dexterity: 14, constitution: 14, intelligence: 10, wisdom: 12, charisma: 17 },
     bio: 'Загубившись у лісі в дитинстві, він уклав угоду з Королевою Фей, щоб знайти вихід. Тепер він її очі та вуха у світі смертних. Його магія виглядає як мерехтливе світло та тіні.',
@@ -459,9 +459,9 @@ const hero19: Character = {
 const hero20: Character = {
     id: '20',
     name: 'Grom',
-    image: '../src/assets/img/avatars/hero20.png',
+    image: '/public/avatars/hero20.png',
     race: { id: 'half-orc', name: 'Half Orc', bonuses: {strength: 2, constitution: 1}},
-    class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '../src/assets/img/class-icons/ranger.svg'},
+    class: { id: 'ranger', name: 'Ranger', hitDie: 10, icon: '/class-icons/ranger.svg'},
     level: 1,
     stats: { strength: 16, dexterity: 12, constitution: 14, intelligence: 10, wisdom: 14, charisma: 8 },
     bio: 'Мисливець за головами, який спеціалізується на вилові монстрів у міських каналізаціях. Він використовує грубу силу та улюблену сокиру та одноручний арбалет. Шрами на його тілі — це карта його трофеїв.',
@@ -476,9 +476,9 @@ const hero20: Character = {
 const hero21: Character = {
     id: '21',
     name: 'Vanrya',
-    image: '../src/assets/img/avatars/hero21.png',
+    image: '/public/avatars/hero21.png',
     race: { id: 'human', name: 'Human', bonuses: {strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
-    class: { id: 'druid', name: 'Druid (Spore)', hitDie: 8, icon: '../src/assets/img/class-icons/druid.svg'},
+    class: { id: 'druid', name: 'Druid (Spore)', hitDie: 8, icon: '/class-icons/druid.svg'},
     level: 1,
     stats: { strength: 10, dexterity: 12, constitution: 14, intelligence: 12, wisdom: 16, charisma: 10 },
     bio: 'Вона не поклоняється квітам та деревам, вона поклоняється грибам, плісняві та розкладу. Вона вірить, що смерть — це лише початок нового життя для грибниці. Її одяг завжди пахне сирою землею.',
@@ -494,9 +494,9 @@ const hero21: Character = {
 const hero22: Character = {
     id: '22',
     name: 'Lyra',
-    image: '../src/assets/img/avatars/hero22.png',
+    image: '/public/avatars/hero22.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: { dexterity: 2, charisma: 1 }},
-    class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '../src/assets/img/class-icons/bard.svg'},
+    class: { id: 'bard', name: 'Bard', hitDie: 8, icon: '/class-icons/bard.svg'},
     level: 1,
     stats: { strength: 8, dexterity: 16, constitution: 12, intelligence: 12, wisdom: 10, charisma: 16 },
     bio: 'Акробатка цирку, яка втекла, щоб побачити світ. Вона використовує свої виступи, щоб відволікати ворогів, поки її друзі роблять брудну роботу. Вона завжди сміється в обличчя небезпеці.',
@@ -512,9 +512,9 @@ const hero22: Character = {
 const hero23: Character = {
     id: '23',
     name: 'Kael',
-    image: '../src/assets/img/avatars/hero23.png',
+    image: '/public/avatars/hero23.png',
     race: { id: 'high elf', name: 'High Elf', bonuses: { dexterity: 2, intelligence: 1 }},
-    class: { id: 'cleric', name: 'Cleric (Light)', hitDie: 8, icon: '../src/assets/img/class-icons/cleric.svg'},
+    class: { id: 'cleric', name: 'Cleric (Light)', hitDie: 8, icon: '/class-icons/cleric.svg'},
     level: 1,
     stats: { strength: 10, dexterity: 12, constitution: 12, intelligence: 12, wisdom: 16, charisma: 13 },
     bio: 'Інквізитор церкви Світла. Він не лікує, він випалює єресь вогнем. Його віра фанатична, і він готовий спалити ціле місто, щоб знищити одного демона.',
@@ -530,9 +530,9 @@ const hero23: Character = {
 const hero24: Character = {
     id: '24',
     name: 'Toar',
-    image: '../src/assets/img/avatars/hero24.png',
+    image: '/public/avatars/hero24.png',
     race: { id: 'dragonborn', name: 'Silver Dragonborn', bonuses: { strength: 2, charisma: 1}},
-    class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '../src/assets/img/class-icons/fighter.svg'},
+    class: { id: 'fighter', name: 'Fighter', hitDie: 10, icon: '/class-icons/fighter.svg'},
     level: 1,
     stats: { strength: 17, dexterity: 10, constitution: 14, intelligence: 10, wisdom: 12, charisma: 12 },
     bio: 'Шляхетний воїн з далеких північних земель. Він використовує своє крижане дихання та важку алебарду, щоб контролювати поле бою. Він говорить мало, але кожне його слово має вагу.',
@@ -547,9 +547,9 @@ const hero24: Character = {
 const hero25: Character = {
     id: '25',
     name: 'Ember',
-    image: '../src/assets/img/avatars/hero25.png',
+    image: '/public/avatars/hero25.png',
     race: { id: 'genasi', name: 'Fire Genasi', bonuses: { constitution: 2, intelligence: 1 }},
-    class: { id: 'sorcerer', name: 'Sorcerer (Draconic)', hitDie: 6, icon: '../src/assets/img/class-icons/sorcerer.svg'},
+    class: { id: 'sorcerer', name: 'Sorcerer (Draconic)', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
     stats: { strength: 10, dexterity: 14, constitution: 14, intelligence: 10, wisdom: 8, charisma: 16 },
     bio: 'Її волосся буквально палає, коли вона злиться. Вона народилася під час виверження вулкану і магія вогню тече в її жилах. Вона погано контролює свої сили і часто випадково підпалює речі.',
@@ -565,9 +565,9 @@ const hero25: Character = {
 const hero26: Character = {
     id: '26',
     name: 'Swift',
-    image: '../src/assets/img/avatars/hero26.png',
+    image: '/public/avatars/hero26.png',
     race: { id: 'wood-elf', name: 'Wood Elf', bonuses: { dexterity: 2, wisdom: 1}},
-    class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '../src/assets/img/class-icons/monk.svg'},
+    class: { id: 'monk', name: 'Monk', hitDie: 8, icon: '/class-icons/monk.svg'},
     level: 1,
     stats: { strength: 10, dexterity: 17, constitution: 13, intelligence: 10, wisdom: 15, charisma: 8 },
     bio: 'Тіньовий вбивця, яка використовує стиль "П\'яного майстра" (хоча сам не п\'є). Вона рухається безшумно, як тінь, і завдає ударів там, де ворог найменше очікує. Служить таємному ордену.',
@@ -582,15 +582,15 @@ const hero26: Character = {
 const hero27: Character = {
     id: '27',
     name: 'Aldous',
-    image: '../src/assets/img/avatars/hero27.png',
+    image: '/public/avatars/hero27.png',
     race: { id: 'human', name: 'Human', bonuses: { strength: 1, dexterity: 1, constitution: 1, intelligence: 1, wisdom: 1, charisma: 1}},
-    class: { id: 'artificer', name: 'Artificer (Alchemist)', hitDie: 8, icon: '../src/assets/img/class-icons/artificer.svg'},
+    class: { id: 'artificer', name: 'Artificer (Alchemist)', hitDie: 8, icon: '/class-icons/artificer.svg'},
     level: 1,
     stats: {
         strength: 10,
         dexterity: 12,
         constitution: 14,
-        intelligence: 16, // Головний стат для змішування реагентів
+        intelligence: 16,
         wisdom: 12,
         charisma: 10
     },
@@ -619,9 +619,9 @@ const hero27: Character = {
 const hero28: Character = {
     id: '28',
     name: 'Vaelar',
-    image: '../src/assets/img/avatars/hero28.png',
+    image: '/public/avatars/hero28.png',
     race: { id: 'drow', name: 'Drow (Dark Elf)', bonuses: {dexterity: 2, charisma: 1}},
-    class: { id: 'sorcerer', name: 'Sorcerer (Shadow Magic)', hitDie: 6, icon: '../src/assets/img/class-icons/sorcerer.svg'},
+    class: { id: 'sorcerer', name: 'Sorcerer (Shadow Magic)', hitDie: 6, icon: '/class-icons/sorcerer.svg'},
     level: 1,
     stats: {
         strength: 8,
@@ -656,9 +656,9 @@ const hero28: Character = {
 const hero29: Character = {
     id: '29',
     name: 'Q\'al',
-    image: '../src/assets/img/avatars/hero29.png',
+    image: '/public/avatars/hero29.png',
     race: { id: 'aarakocra', name: 'Aarakocra', bonuses: {wisdom: 2}},
-    class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '../src/assets/img/class-icons/cleric.svg' },
+    class: { id: 'cleric', name: 'Cleric', hitDie: 8, icon: '/class-icons/cleric.svg' },
     level: 1,
     stats: {
         strength: 14,

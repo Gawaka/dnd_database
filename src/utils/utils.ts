@@ -5,15 +5,15 @@ interface UtilsProps {
 }
 
 export const racesAvatars = [
-    { id: 'dragonborn', img: 'public/races-avatars/dragonborn.jpg' },
-    { id: 'dwarf',      img: 'public/races-avatars/dwarf.jpg' },
-    { id: 'elf',        img: 'public/races-avatars/elf.jpg' },
-    { id: 'gnome',      img: 'public/races-avatars/gnome.jpg' },
-    { id: 'half-elf',   img: 'public/races-avatars/half-elf.jpg' },
-    { id: 'half-orc',   img: 'public/races-avatars/half-orc.jpg' },
-    { id: 'halfling',   img: 'public/races-avatars/halfing.jpg' },
-    { id: 'human',      img: 'public/races-avatars/human.jpg' },
-    { id: 'tiefling',   img: 'public/races-avatars/tiefling.jpg' },
+    { id: 'dragonborn', img: '/races-avatars/dragonborn.jpg' },
+    { id: 'dwarf',      img: '/races-avatars/dwarf.jpg' },
+    { id: 'elf',        img: '/races-avatars/elf.jpg' },
+    { id: 'gnome',      img: '/races-avatars/gnome.jpg' },
+    { id: 'half-elf',   img: '/races-avatars/half-elf.jpg' },
+    { id: 'half-orc',   img: '/races-avatars/half-orc.jpg' },
+    { id: 'halfling',   img: '/races-avatars/halfing.jpg' },
+    { id: 'human',      img: '/races-avatars/human.jpg' },
+    { id: 'tiefling',   img: '/races-avatars/tiefling.jpg' },
 ];
 
 console.log(racesAvatars);
