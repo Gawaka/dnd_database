@@ -8,7 +8,7 @@
     border: 1px solid variables.$border-color;
     box-shadow: 0 10px 30px variables.$shadow-color;
     border-radius: 12px;
-    background-image: url('../../../src/assets/img/backgrounds/bg-card.png');
+    background-image: url('/backgrounds/bg-card.png');
     color: variables.$text-main;
 
     &__scenario {

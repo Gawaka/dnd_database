@@ -55,3 +55,14 @@
         height: 40px;
     }
 }
+
+@media (max-width: variables.$mobile-big) {
+    .scenarios-page {
+        align-items: center;
+        text-align: center;
+
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

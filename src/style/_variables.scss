@@ -27,7 +27,7 @@ $tablet: 1024px;
 $tablet-small: 768px;
 
 $mobile-big: 480px;
-$mobile: 320px;  
+$mobile: 376px;  
 
 @mixin devices($breakpoint) {
     @media (max-width: $breakpoint) {

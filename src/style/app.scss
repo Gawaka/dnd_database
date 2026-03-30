@@ -9,8 +9,10 @@
 
     &__main {
         display: flex;
-        flex: 1;
-        padding: 40px;
+        width: auto;
+
+        // flex: 1;
+        padding: 50px;
         gap: 40px;
         justify-content: center;
         align-items: flex-start;
@@ -36,7 +38,10 @@ ul {
 .app__main {
 
     @include variables.devices(variables.$tablet) {
-        flex-direction: column-reverse;
-        align-items: center;
+        padding: 0;
+        flex-direction: row;
+        // align-items: center;
+        // justify-content: center;
+        margin: 0 auto;
     }
 }

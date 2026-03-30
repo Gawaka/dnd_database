@@ -144,6 +144,8 @@
 // планш та мобілка
 @media (max-width: 1024px) {
     .header {
+        background-size: cover;
+        margin-bottom: 20px;
         padding: 5px 15px;
         align-items: start;
 
@@ -197,6 +199,20 @@
             font-size: 1.6rem;
             display: block;
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: variables.$mobile-big) {
+    .header {
+        min-height: 100px;
+        padding: 20px 6px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__title {
+            font-size: 17px;
         }
     }
 }
