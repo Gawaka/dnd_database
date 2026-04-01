@@ -1,10 +1,337 @@
-@use '../../style/variables';
+// @use '../../style/variables';
+
+// .details {
+//     width: 100%;
+//     max-width: 600px;
+//     perspective: 2000px;
+//     margin-bottom: 40px;
+
+//     &__inner {
+//         position: relative;
+//         width: 100%;
+//         transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+//         transform-style: preserve-3d;
+//         display: grid;
+//     }
+
+//     &.is-flipped &__inner {
+//         transform: rotateY(180deg);
+//     }
+
+//     &__front, &__back {
+//         grid-area: 1 / 1;
+//         width: 100%;
+//         backface-visibility: hidden;
+//         display: flex;
+//         flex-direction: column;
+//         padding: 30px; 
+//         background-image: url('/backgrounds/bg-card.png');
+//         border: 1px solid variables.$border-color;
+//         border-radius: 12px;
+//         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+//         min-height: 1000px; 
+//     }
+
+//     &__back {
+//         transform: rotateY(180deg);
+//         position: relative;
+//     }
+
+//     &__title-wrapper {
+//         text-align: center;
+
+//         p {
+//             margin: 5px 0 12px 0;
+//             font-size: 1.3rem;
+//         }
+//     }
+
+//     &__title {
+//         font-size: 1.3rem;
+//         font-style: italic;
+//         color: variables.$text-main;
+//         margin-bottom: 5px;
+//     }
+
+//     &__title--name {
+//         color: variables.$text-gold;
+//         font-family: 'Cinzel', serif;
+//         font-size: 2rem;
+//         font-weight: 700;
+//         text-transform: uppercase;
+//         letter-spacing: 2px;
+//         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+//     }
+
+//     &__image {
+//         width: 75%;
+//         // height: 480px; 
+//         margin: 20px auto;
+//         object-fit: cover;
+//         border: 2px solid variables.$border-color;
+//         border-radius: 4px;
+//         box-shadow: inset 0 0 20px #000, 0 10px 25px rgba(0,0,0,0.6);
+//     }
+
+//     &__character-info {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 20px;
+//         padding: 20px 0;
+//     }
+
+//     &__character-general-info {
+//         display: flex;
+//         justify-content: space-between;
+//         border-bottom: 1px solid rgba(variables.$text-gold, 0.2);
+//         padding-bottom: 15px;
+        
+//         p {
+//             font-size: 1.3rem;
+//         }
+//     }
+
+//     &__character-info-text {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 8px;
+//         font-size: 1.3rem;
+//         line-height: 1.6;
+//     }
+
+//     &__bio {
+//         font-size: 1.4rem;
+//         margin-bottom: 10px;
+//     }
+
+//     strong {
+//         color: variables.$text-gold;
+//         font-size: 1.4rem;
+//         font-weight: 600;
+//     }
+
+//     .button-group {
+//         margin-top: auto;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 15px;
+//     }
+
+//     .button-secondary {
+//         position: absolute;
+//         top: 20px;
+//         right: 20px;
+//         z-index: 10;
+//         color: variables.$text-gold;
+//         cursor: pointer;
+//     }
+// }
+
+// @media (max-width: variables.$tablet) {
+//     .details {
+//         width: 90%;
+//         margin: 0 auto;
+
+//         &__front, &__back {
+//             padding: 10px;
+//             margin: 0 auto;
+//         }
+//     }
+// }
+
+// @media (max-width: variables.$tablet-small) {
+//     .details {
+//         width: 350px;
+//         display: flex;
+//         justify-content: center;
+//         height: auto;
+
+//     &__front, &__back {
+//         grid-area: 1 / 1;
+//         width: 100%;
+//         backface-visibility: hidden;
+//         display: flex;
+//         flex: 1;
+//     }
+
+//     &__title {
+//         font-size: 1.1rem;
+//     }
+
+//     &__title--name {
+//         font-size: 1.5rem;
+//     }
+
+//     &__image {
+//         width: 200px;
+//         height: 200px; 
+//         margin: 10px auto;
+//     }
+
+//     &__character-info {
+//         gap: 8px;
+//         padding: 10px 0;
+//     }
+
+//     &__character-general-info {
+//         display: flex;
+//         flex-wrap: wrap;
+        
+//         p {
+//             font-size: 1rem;
+//         }
+//     }
+
+//     &__bio {
+//         font-size: 1.3rem;
+//         margin-bottom: 10px;
+//     }
+
+//     &__character-info-text {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 8px;
+//         font-size: 1.3rem;
+//         line-height: 1.6;
+//     }
+
+//         strong {
+//             color: variables.$text-gold;
+//             font-size: 1.2rem;
+//             font-weight: 600;
+//         }
+//     }
+
+//     .button-secondary {
+//         top: 10px;
+//         right: 30px;
+//     }
+// }
+
+// @media (max-width: 670px) {
+//     .details {
+//         width: 600px;
+//         height: 630px;
+
+//         &__front, &__back {
+//                 grid-area: 1 / 1;
+//                 width: 100%;
+//                 min-height: 600px; 
+//             }
+
+//         &__title {
+//             font-size: 1rem;
+//         }
+
+//         &__title--name {
+//             font-size: 1.2rem;
+//         }
+
+//         &__image {
+//             width: 150px;
+//             height: 150px; 
+//             margin: 10px auto;
+//         }
+
+//         &__character-info {
+//             gap: 5px;
+//             padding: 10px 0;
+//         }
+
+//         &__character-general-info {
+//             display: flex;
+//             flex-wrap: wrap;
+            
+//             p {
+//                 font-size: 1rem;
+//             }
+//         }
+
+//         &__bio {
+//             font-size: 1rem;
+//             margin-bottom: 10px;
+//         }
+
+//         &__character-info-text {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 8px;
+//             font-size: 1rem;
+//             line-height: 1.2;
+//         }
+
+//         strong {
+//             color: variables.$text-gold;
+//             font-size: 1.1rem;
+//             font-weight: 400;
+//         }
+//     }
+// }
+
+// @media (max-width: variables.$mobile-big) {
+//     .details {
+//         width: 450px;
+//         height: 700px;
+
+//         &__front, &__back {
+//                 grid-area: 1 / 1;
+//                 width: 100%;
+//             }
+
+//         &__title {
+//             font-size: 1rem;
+//         }
+
+//         &__title--name {
+//             font-size: 1.2rem;
+//         }
+
+//         &__image {
+//             width: 150px;
+//             height: 150px; 
+//             margin: 10px auto;
+//         }
+
+//         &__character-info {
+//             gap: 5px;
+//             padding: 10px 0;
+//         }
+
+//         &__character-general-info {
+//             display: flex;
+//             flex-wrap: wrap;
+            
+//             p {
+//                 font-size: 1rem;
+//             }
+//         }
+
+//         &__bio {
+//             font-size: 1rem;
+//             margin-bottom: 10px;
+//         }
+
+//         &__character-info-text {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 8px;
+//             font-size: 1rem;
+//             line-height: 1.2;
+//         }
+
+//         strong {
+//             color: variables.$text-gold;
+//             font-size: 1.1rem;
+//             font-weight: 400;
+//         }
+//     }
+// }
+
+@use '../../style/variables' as v;
 
 .details {
     width: 100%;
-    max-width: 600px;
     perspective: 2000px;
-    margin-bottom: 40px;
 
     &__inner {
         position: relative;
@@ -20,16 +347,17 @@
 
     &__front, &__back {
         grid-area: 1 / 1;
-        width: 100%;
+        width: 400px;
         backface-visibility: hidden;
         display: flex;
         flex-direction: column;
         padding: 30px; 
         background-image: url('/backgrounds/bg-card.png');
-        border: 1px solid variables.$border-color;
+        background-size: contain;
+        border: 1px solid v.$border-color;
         border-radius: 12px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-        min-height: 1000px; 
+        min-height: auto;
     }
 
     &__back {
@@ -37,168 +365,126 @@
         position: relative;
     }
 
-    &__title-wrapper {
-        text-align: center;
+    &__title-wrapper { 
+        text-align: center; 
 
-        p {
-            margin: 5px 0 12px 0;
-            font-size: 1.3rem;
-        }
+        p { 
+            margin: 5px 0 12px 0; font-size: 1.3rem; 
+        } 
     }
 
-    &__title {
-        font-size: 1.3rem;
-        font-style: italic;
-        color: variables.$text-main;
-        margin-bottom: 5px;
+    &__title { 
+        font-size: 1.3rem; 
+        font-style: italic; 
+        color: v.$text-main; 
+        margin-bottom: 5px; 
     }
 
-    &__title--name {
-        color: variables.$text-gold;
-        font-family: 'Cinzel', serif;
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+    &__title--name { 
+        color: v.$text-gold; 
+        font-family: 'Cinzel', serif; 
+        font-size: 2rem; font-weight: 700; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9); 
     }
-
+    
     &__image {
-        width: 75%;
-        // height: 480px; 
+        width: 100%;
+        max-width: 350px; 
+        aspect-ratio: 1 / 1;
         margin: 20px auto;
         object-fit: cover;
-        border: 2px solid variables.$border-color;
+        border: 2px solid v.$border-color;
         border-radius: 4px;
         box-shadow: inset 0 0 20px #000, 0 10px 25px rgba(0,0,0,0.6);
     }
 
-    &__character-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0;
+    &__character-info { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 20px 0; 
     }
 
-    &__character-general-info {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(variables.$text-gold, 0.2);
-        padding-bottom: 15px;
-        
+    &__character-general-info { 
+        display: flex; 
+        justify-content: space-between; 
+        border-bottom: 1px solid rgba(v.$text-gold, 0.2); 
+        padding-bottom: 15px; 
+
         p {
-            font-size: 1.3rem;
-        }
+            font-size: 1.3rem; 
+        } 
     }
 
-    &__character-info-text {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        font-size: 1.3rem;
-        line-height: 1.6;
+    &__character-info-text { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 8px; 
+        font-size: 1.3rem; 
+        line-height: 1.6; 
     }
 
-    &__bio {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
+
+    &__bio { 
+        font-size: 1.4rem; 
+        margin-bottom: 10px; 
     }
 
-    strong {
-        color: variables.$text-gold;
-        font-size: 1.4rem;
-        font-weight: 600;
+    strong { 
+        color: v.$text-gold; 
+        font-size: 1.4rem; 
+        font-weight: 600; 
     }
 
-    .button-group {
-        margin-top: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+
+    .button-group { 
+        margin-top: auto; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px; 
+        padding-top: 20px;
     }
 
-    .button-secondary {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 10;
-        color: variables.$text-gold;
-        cursor: pointer;
+    .button-secondary { 
+        position: absolute; 
+        top: 15px; 
+        right: 15px; 
+        z-index: 10; 
+        color: v.$text-gold; cursor: pointer; 
     }
-}
 
-@media (max-width: variables.$tablet) {
-    .details {
-        width: 90%;
-        margin: 0 auto;
 
+    @media (max-width: v.$tablet) {
         &__front, &__back {
-            padding: 10px;
-            margin: 0 auto;
+            padding: 20px;
         }
-    }
-}
 
-@media (max-width: variables.$tablet-small) {
-    .details {
-        width: 400px;
-        display: flex;
-        justify-content: center;
-        height: auto;
-
-    &__front, &__back {
-        grid-area: 1 / 1;
-        width: 100%;
-        backface-visibility: hidden;
-        display: flex;
-        flex: 1;
-    }
-
-    &__title {
-        font-size: 1.1rem;
-    }
-
-    &__title--name {
-        font-size: 1.5rem;
-    }
-
-    &__image {
-        width: 200px;
-        height: 200px; 
-        margin: 10px auto;
-    }
-
-    &__character-info {
-        gap: 8px;
-        padding: 10px 0;
-    }
-
-    &__character-general-info {
-        display: flex;
-        flex-wrap: wrap;
+        &__title--name { 
+            font-size: 1.6rem; 
+        }
         
-        p {
-            font-size: 1rem;
+        &__image {
+            max-width: 200px;
         }
-    }
 
-    &__bio {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
+        &__character-general-info {
+            flex-wrap: wrap;
+            gap: 10px;
 
-    &__character-info-text {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        font-size: 1.3rem;
-        line-height: 1.6;
-    }
-
-        strong {
-            color: variables.$text-gold;
-            font-size: 1.2rem;
-            font-weight: 600;
+            p { 
+                font-size: 1.1rem; 
+            }
         }
+
+        &__character-info-text, &__bio { 
+            font-size: 1.1rem; 
+        }
+
+        strong { 
+            font-size: 1.2rem; 
+        }
+
     }
 }

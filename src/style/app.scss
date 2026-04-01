@@ -1,21 +1,88 @@
-@use '../style/variables';
+// @use '../style/variables';
+
+// .app {
+//     min-height: 100vh;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: #1a1a1a; 
+//     color: variables.$text-main;
+
+//     &__main {
+//         display: flex;
+//         width: 100%;
+
+//         // flex: 1;
+//         padding: 50px;
+//         gap: 40px;
+//         justify-content: center;
+//         align-items: flex-start;
+//     }
+// }
+
+// a {
+//     color: inherit;
+//     text-decoration: none;
+//     transition: all 0.3s ease;
+//     display: inline-block;
+
+//     &:hover {
+//         transform: scale(1.1);
+//         color: variables.$text-gold;
+//     }
+// }
+
+// ul {
+//     list-style: none;
+// }
+
+// @media(max-width: variables.$tablet) {
+//     .app__main {
+//         padding: 0;
+//         flex-direction: row;
+//         // align-items: center;
+//         // justify-content: center;
+//         margin: 0 auto;
+//     }
+// }
+
+// @media(max-width: 670px) {
+//     .app__main {
+//         padding: 0;
+//         flex-direction: column-reverse;
+        
+//         // align-items: center;
+//         // justify-content: center;
+//         margin: 0 auto;
+//     }
+// }
+
+@use '../style/variables' as v;
 
 .app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a; 
-    color: variables.$text-main;
+    color: v.$text-main;
+    margin: 0 auto;
+
 
     &__main {
         display: flex;
-        width: auto;
-
-        // flex: 1;
-        padding: 50px;
+        width: 100%;
+        max-width: 1680px;
+        margin: 0 auto;
+        padding: 40px;
         gap: 40px;
-        justify-content: center;
         align-items: flex-start;
+        margin: 0 auto;
+
+        @media (max-width: v.$tablet) {
+            flex-direction: column-reverse;
+            padding: 20px 15px;
+            align-items: center;
+        }
     }
 }
 
@@ -27,21 +94,10 @@ a {
 
     &:hover {
         transform: scale(1.1);
-        color: variables.$text-gold;
+        color: v.$text-gold;
     }
 }
 
 ul {
     list-style: none;
-}
-
-.app__main {
-
-    @include variables.devices(variables.$tablet) {
-        padding: 0;
-        flex-direction: row;
-        // align-items: center;
-        // justify-content: center;
-        margin: 0 auto;
-    }
 }

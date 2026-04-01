@@ -1,11 +1,96 @@
-@use '../../style/variables';
+// @use '../../style/variables';
+
+// .char-card {
+//     background-image: url('/backgrounds/bg-card.png');
+//     max-width: 300px;
+//     height: auto;
+//     padding: 24px 16px;
+//     border: 1px solid variables.$border-color;
+//     border-radius: 8px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: flex-start;
+//     gap: 8px;
+//     cursor: pointer;
+//     transition: all 0.3s ease-in-out;
+//     position: relative;
+//     box-shadow: 0 4px 10px variables.$shadow-color;
+
+//     &:not(.char-card--active):hover {
+//         transform: translateY(-5px);
+//         border-color: variables.$text-gold;
+//         box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(197, 160, 89, 0.2);
+        
+//         img {
+//             filter: brightness(1.1);
+//         }
+//     }
+
+//     &__name {
+//         margin: 0 0 12px 0;
+//         font-family: 'Cinzel', serif;
+//         font-size: 1.5rem;
+//         font-weight: 700;
+//         color: variables.$text-gold;
+//         text-align: center;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//         text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+//     }
+
+//     &__avatar {
+//         width: 150px;
+//         height: 150px;
+//         object-fit: cover;
+//         border-radius: 4px;
+//         border: 2px solid #000;
+//         box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+//         transition: border-color 0.3s ease, filter 0.3s ease;
+//         margin-bottom: 8px;
+//     }
+
+//     p {
+//         margin: 0;
+//         font-size: 0.95rem;
+//         line-height: 1.4;
+//         color: variables.$text-main;
+//         font-weight: 500;
+//     }
+
+//     &__class {
+//         color: variables.$text-main; 
+//         font-weight: bold;
+//     }
+
+//     &__race {
+//         font-style: italic;
+//         font-size: 0.85rem;
+//     }
+// }
+
+// .char-card--active {
+//     background-image: linear-gradient(rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.085)), url('../../assets/img/backgrounds/bg-card.png');
+//     border-color: variables.$text-gold;
+//     transform: scale(1.05);
+//     box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+//     cursor: default;
+
+//     img {
+//         filter: brightness(1.1);
+//         border-color: variables.$text-gold;
+//     }
+// }
+
+@use '../../style/variables' as v;
 
 .char-card {
     background-image: url('/backgrounds/bg-card.png');
-    max-width: 300px;
-    height: auto;
-    padding: 24px 16px;
-    border: 1px solid variables.$border-color;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    border: 1px solid v.$border-color;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -15,69 +100,67 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
-    box-shadow: 0 4px 10px variables.$shadow-color;
+    box-shadow: 0 4px 10px v.$shadow-color;
 
-    &:not(.char-card--active):hover {
-        transform: translateY(-5px);
-        border-color: variables.$text-gold;
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(197, 160, 89, 0.2);
+    &:not(.char-card--active):hover { 
         
-        img {
-            filter: brightness(1.1);
-        }
+        transform: translateY(-5px); 
+        border-color: v.$text-gold; 
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(197, 160, 89, 0.2); 
+        
+        img { 
+            filter: brightness(1.1); 
+        } 
     }
-
-    &__name {
-        margin: 0 0 12px 0;
-        font-family: 'Cinzel', serif;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: variables.$text-gold;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-    }
-
+    
+    &__name { 
+        margin: 0 0 12px 0; 
+        font-family: 'Cinzel', serif; 
+        font-size: 1.3rem; 
+        font-weight: 700; 
+        color: v.$text-gold; 
+        text-align: center; 
+        text-transform: uppercase; 
+        text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+    
     &__avatar {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         object-fit: cover;
         border-radius: 4px;
         border: 2px solid #000;
         box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-        transition: border-color 0.3s ease, filter 0.3s ease;
         margin-bottom: 8px;
     }
 
-    p {
-        margin: 0;
-        font-size: 0.95rem;
-        line-height: 1.4;
-        color: variables.$text-main;
-        font-weight: 500;
+    p { 
+        margin: 0; 
+        font-size: 0.95rem; 
+        line-height: 1.4; 
+        color: v.$text-main; 
+        font-weight: 500; 
+        text-align: center;
     }
 
-    &__class {
-        color: variables.$text-main; 
-        font-weight: bold;
+    &__class { 
+        color: v.$text-main; 
+        font-weight: bold; 
     }
 
-    &__race {
-        font-style: italic;
-        font-size: 0.85rem;
+    &__race { 
+        font-style: italic; 
+        font-size: 0.85rem; 
     }
 }
 
 .char-card--active {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.085)), url('../../assets/img/backgrounds/bg-card.png');
-    border-color: variables.$text-gold;
-    transform: scale(1.05);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08)), url('../../assets/img/backgrounds/bg-card.png');
+    border-color: v.$text-gold;
+    transform: scale(1.03);
     box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
     cursor: default;
-
-    img {
-        filter: brightness(1.1);
-        border-color: variables.$text-gold;
+    img { 
+        filter: brightness(1.1); 
+        border-color: v.$text-gold; 
     }
 }
