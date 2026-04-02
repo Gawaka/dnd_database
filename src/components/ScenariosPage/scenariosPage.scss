@@ -1,4 +1,4 @@
-@use '../../style/variables';
+@use '../../style/variables' as v;
 
 .scenarios-page {
     width: 90%;
@@ -12,12 +12,11 @@
     &__view-header {
         display: flex;
         flex-direction: column;
-        width: 65%;
         margin: 0 auto;
     }
 
     strong {
-        color: variables.$text-gold;
+        color: v.$text-gold;
         font-size: 1.6rem;
     }
 
@@ -26,7 +25,7 @@
         font-family: "Cinzel", serif;
         font-size: 3rem;
         font-weight: 700;
-        color: variables.$text-gold;
+        color: v.$text-gold;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -50,13 +49,13 @@
     }
 
     .button-secondary {
-        color: variables.$text-gold;
+        color: v.$text-gold;
         width: 120px;
         height: 40px;
     }
 }
 
-@media (max-width: variables.$mobile-big) {
+@media (max-width: v.$mobile-big) {
     .scenarios-page {
         align-items: center;
         text-align: center;

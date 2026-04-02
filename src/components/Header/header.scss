@@ -1,4 +1,4 @@
-@use '../../style/variables';
+@use '../../style/variables' as v;
 
 .header {
     font-family: "Cinzel", serif;
@@ -30,7 +30,7 @@
         object-fit: contain;
         filter: 
             drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8)) 
-            drop-shadow(0 0 15px rgba(variables.$text-gold, 0.2)); 
+            drop-shadow(0 0 15px rgba(v.$text-gold, 0.2)); 
         transition: transform 0.5s ease;
 
         &:hover {
@@ -41,7 +41,7 @@
     &__title {
         text-transform: uppercase;
         font-size: clamp(1.5rem, 3vw, 2.5rem);
-        color: variables.$text-main;
+        color: v.$text-main;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         margin: 0;
     }
@@ -55,7 +55,7 @@
     }
 
     &__navigate-item-desktop {
-        color: variables.$text-main;
+        color: v.$text-main;
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -63,8 +63,8 @@
         position: relative;
 
         &.active {
-            color: variables.$text-gold;
-            text-shadow: 0 0 10px rgba(variables.$text-gold, 0.5);
+            color: v.$text-gold;
+            text-shadow: 0 0 10px rgba(v.$text-gold, 0.5);
             
             &::after {
                 content: '';
@@ -73,13 +73,13 @@
                 left: 0;
                 width: 100%;
                 height: 1px;
-                background: variables.$text-gold;
-                box-shadow: 0 0 5px variables.$text-gold;
+                background: v.$text-gold;
+                box-shadow: 0 0 5px v.$text-gold;
             }
         }
 
         &:hover {
-            color: variables.$text-gold;
+            color: v.$text-gold;
             transform: translateY(-2px);
         }
     }
@@ -102,7 +102,7 @@
             display: block;
             width: 100%;
             height: 3px;
-            background: variables.$text-main;
+            background: v.$text-main;
             margin-bottom: 6px;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border-radius: 2px;
@@ -129,15 +129,15 @@
     }
 
     &__navigate-item {
-        color: variables.$text-main;
+        color: v.$text-main;
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: 0.3s;
 
         &.active {
-            color: variables.$text-gold;
-            text-shadow: 0 0 10px rgba(variables.$text-gold, 0.5);
+            color: v.$text-gold;
+            text-shadow: 0 0 10px rgba(v.$text-gold, 0.5);
         }
     }
 }
@@ -175,9 +175,9 @@
             top: 0;
             right: -100%;
             width: 280px;
-            height: 100vh;
+            height: 100%;
             background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-            border-left: 1px solid variables.$text-gold-third;
+            border-left: 1px solid v.$text-gold-third;
             padding: 120px 40px;
             transition: right 0.4s ease-in-out;
             z-index: 1000;
@@ -204,7 +204,7 @@
     }
 }
 
-@media (max-width: variables.$mobile-big) {
+@media (max-width: v.$mobile-big) {
     .header {
         min-height: 100px;
         padding: 20px 6px;
