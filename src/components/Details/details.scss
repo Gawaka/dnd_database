@@ -460,6 +460,7 @@
     @media (max-width: v.$tablet) {
         &__front, &__back {
             padding: 20px;
+            width: 370px;
         }
 
         &__title--name { 
@@ -485,6 +486,14 @@
 
         strong { 
             font-size: 1.2rem; 
+        }
+
+        .button-secondary { 
+            position: absolute; 
+            top: 10px; 
+            right: 45px; 
+            z-index: 10; 
+            color: v.$text-gold; cursor: pointer; 
         }
     }
 }
